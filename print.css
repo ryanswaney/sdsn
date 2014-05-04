@@ -1,0 +1,91 @@
+/****************************************************
+  
+  Navigation Styles
+
+*****************************************************/
+
+.left-off-canvas-menu {
+  display: none;
+}
+.right-off-canvas-menu {
+  display: none;
+}
+.side-nav {
+  display: none;
+}
+.tab-bar {
+  display: none;
+}
+.top-bar {
+  display: none;
+}
+#drop-newsletter {
+  display: none;
+}
+#drop-search {
+  display: none;
+}
+#drop-translate {
+  display: none;
+}
+
+/****************************************************
+  
+  Content Styles
+
+*****************************************************/
+
+body {
+  font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-size: 80%;
+}
+#branding img {
+  max-width: 200px;
+}
+#branding ul {
+  display: none;
+}
+[class*="block-grid-"] {
+  display: block;
+  padding: 0;
+  margin: 0 -0.625rem;
+}
+[class*="block-grid-"]:before, [class*="block-grid-"]:after {
+  content: " ";
+  display: table;
+}
+[class*="block-grid-"]:after {
+  clear: both;
+}
+[class*="block-grid-"]>li {
+  display: block;
+  height: auto;
+  float: left;
+  padding: 0 0.625rem 1.25rem;
+}
+
+.page a,
+.page-footer a {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.page a[href^=http]:after,
+.page a[href^=mailto]:after,
+.page-footer a[href^=http]:after,
+.page-footer a[href^=mailto]:after {
+  content:" <" attr(href) "> ";
+}
+
+.medium-block-grid-3>li {
+  width: 33.33333%;
+}
+.page-header {
+  margin-top: 1rem;
+}
+.page-footer img { 
+  display: none;
+}
+.post.blurb {
+  font-size: 80%;
+}
