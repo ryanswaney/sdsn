@@ -44,7 +44,7 @@
 
         <ul class="no-bullet">
         <?php while ( have_rows('file_goal_related_documents') ) : the_row(); ?>
-          <li>
+          <li class="margin-bottom-1">
             <?php $file = get_sub_field('goal_related_document'); //var_dump($file); ?>
             <a href="<?php echo $file['url']; ?>"><?php echo $file['title']; ?></a>
           </li>

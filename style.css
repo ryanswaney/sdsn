@@ -721,6 +721,11 @@ Tags:
     color: #4c94c7;
   }
 
+  .tg-header span a:hover,
+  .tg-header span a:focus {
+    color: #4C94C7;
+  }
+
   .tg-nav {
     margin-bottom: 0;
   }
