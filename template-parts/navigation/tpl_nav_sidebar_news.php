@@ -30,8 +30,7 @@
 </ul>
 
 <ul class="side-nav">
-  <li>Media Contacts</li>
+  <li>Media Requests</li>
   <li class="divider"></li>
-  <li><a href="mailto:erin.trowbridge@unsdsn.org">Erin Trowbridge</a></li>
-  <li><a href="mailto:kathy.zhang@unsdsn.org">Kathy Zhang</a></li>
+  <li><a href="mailto:media@unsdsn.org">Contact</a></li>
 </ul>

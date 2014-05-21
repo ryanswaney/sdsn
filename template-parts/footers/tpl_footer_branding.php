@@ -33,7 +33,7 @@
                       4 Rue de Chevreuse<br/>
                       75006 Paris<br/>
                       France<br />
-                      +33 (1) 44 10 24 49
+                      +33 (1) 84 86 06 60
                     </address>
                   </li>
                   <li class="reversed-text">

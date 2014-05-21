@@ -38,14 +38,68 @@
     </div>
 
     <div class="small-12 large-4 columns">
+
+      <?php $args = array(
+          'post_type' => 'post',
+          'posts_per_page' => '5',
+          'category_name' => 'goals-news' )
+        ?>
+
+        <?php $related_news = get_posts( $args ); ?>
+
+        <?php if( !empty( $related_news ) ) : ?>
+
+          <h5>News</h5>
+
+          <ul class="no-bullet">
+
+          <?php foreach ( $related_news as $post ) : setup_postdata( $post ); ?>
+            <li class="margin-bottom-1">
+              <article class="post archive">
+                <header>
+                  <div class="post-meta"><time datetime="<?php the_time('Y-n-D'); ?>" pubdate><?php the_time('M j, Y'); ?></time></div>
+                  <h1><a href="<?php the_permalink();?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_title(); ?></a></h1>
+                </header>
+              </article>
+            </li>
+          <?php endforeach; ?>
+          <?php if ( count( $related_news ) >= 5 ) : ?>
+            <li>
+              <a class="button tiny radius" href="/news/category/goals-news">View All</a>
+            </li>
+          <?php endif; ?>
+
+          </ul>
+
+          <?php wp_reset_postdata(); ?>
+
+        <?php endif; ?>
+
+
+
       <?php if( have_rows('file_goal_related_documents') ) : ?>
 
-        <h5>Related Documents</h5>
+        <h5 class="border-top">Related Documents</h5>
 
         <ul class="no-bullet">
         <?php while ( have_rows('file_goal_related_documents') ) : the_row(); ?>
           <li class="margin-bottom-1">
             <?php $file = get_sub_field('goal_related_document'); //var_dump($file); ?>
+            <a href="<?php echo $file['url']; ?>"><?php echo $file['title']; ?></a>
+          </li>
+        <?php endwhile; ?>
+        </ul>
+
+      <?php endif; ?>
+
+      <?php if( have_rows('file_goal_updated_documents') ) : ?>
+
+        <h5 class="border-top">Updated Draft Goals and Targets</h5>
+
+        <ul class="no-bullet">
+        <?php while ( have_rows('file_goal_updated_documents') ) : the_row(); ?>
+          <li class="margin-bottom-1">
+            <?php $file = get_sub_field('goal_updated_document'); //var_dump($file); ?>
             <a href="<?php echo $file['url']; ?>"><?php echo $file['title']; ?></a>
           </li>
         <?php endwhile; ?>
