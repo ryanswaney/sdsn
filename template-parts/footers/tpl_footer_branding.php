@@ -43,7 +43,7 @@
                       535 W 116th Street<br/>
                       New York, NY 10027<br/>
                       USA<br />
-                      +1 (212) 870 2776
+                      +1 (212) 870 2792
                     </address>
                   </li>
                   <li class="reversed-text">

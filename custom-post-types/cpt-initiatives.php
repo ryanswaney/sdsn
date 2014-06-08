@@ -28,7 +28,7 @@ function cpt_register_sdsn_initiatives() {
 		'label'               => __( 'solution-initiatives', 'text_domain' ),
 		'description'         => __( 'SDSN Solution Initiatives', 'text_domain' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
+		'supports'            => array( 'title', 'editor', 'excerpt', 'page-attributes', 'thumbnail' ),
 		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,

@@ -9,8 +9,7 @@
 
         <ul class="inline-list tg-nav">
           <li class="reversed-text">Navigate to:</li>
-          <li class="reversed-text"><a href="#targets">Targets</a></li>
-          <li class="reversed-text"><a href="#indicators">Indicators</a></li>
+          <li class="reversed-text"><a href="#targets">Targets and Goals</a></li>
           <li class="reversed-text"><a href="#evidence">Evidence</a></li>
           <li class="reversed-text"><a href="#faq">FAQs</a></li>
         </ul>

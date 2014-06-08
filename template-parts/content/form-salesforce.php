@@ -3,6 +3,12 @@
      <input type=hidden name="oid" value="00Db0000000dRlq">
      <input type=hidden name="retURL" value="http://unsdsn.org/about-us/contact/subscription-successful/">
 
+     <input hidden id="00Nb00000094gKx" name="00Nb00000094gKx" type="checkbox" value="1" checked />
+
+     <select  hidden id="lead_source" name="lead_source">
+          <option value="Newsletter Subscription" selected>Newsletter Subscription</option>
+     </select>
+
      <div class="row">
 
      <div class="small-12 large-6 columns">
