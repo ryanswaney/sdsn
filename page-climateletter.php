@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: SDSN.Edu
+ * Template Name: Climate Letter
  *
  */
 ?>
@@ -23,7 +23,6 @@
 
         
         <h1 class="page-title"><?php the_title(); ?></h1>
-        <span style="font-size: 105%;">Online Education For Sustainable Development</span>
 
     </div>
   </div>
@@ -39,29 +38,13 @@
 
     <div class="small-12 large-5 columns">
 
-      <?php the_field('sdsn.edu_sidebar'); ?>
+      <?php the_field('climate_letter_sidebar_text'); ?>
 
-      <?php Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-edu-signup' ) ); ?>
+      <?php Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-sf-climateletter' ) ); ?>
 
     </div>
 
   </div>
-
-<?php if ( get_field('sdsn.edu_block_2_main') ) : ?>
-
-  <div class="row border-top">
-
-    <div class="small-12 large-7 columns">
-      <?php the_field('sdsn.edu_block_2_main'); ?>
-    </div>
-
-    <div class="small-12 large-5 columns">
-      <?php the_field('sdsn.edu_block_2_sidebar'); ?>
-    </div>
-
-  </div>
-
-<?php endif; ?>
 
 <?php endwhile; ?>
 

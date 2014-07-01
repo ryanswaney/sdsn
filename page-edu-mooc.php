@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: SDSN.Edu
+ * Template Name: SDSN.edu -- MOOC 
  *
  */
 ?>
@@ -23,7 +23,7 @@
 
         
         <h1 class="page-title"><?php the_title(); ?></h1>
-        <span style="font-size: 105%;">Online Education For Sustainable Development</span>
+        <span style="font-size: 105%;"><?php the_field('mooc_subtitle'); ?></span>
 
     </div>
   </div>
@@ -39,9 +39,9 @@
 
     <div class="small-12 large-5 columns">
 
-      <?php the_field('sdsn.edu_sidebar'); ?>
+      <?php the_field('mooc_sidebar'); ?>
 
-      <?php Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-edu-signup' ) ); ?>
+      <?php Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-mooc-climate' ) ); ?>
 
     </div>
 
