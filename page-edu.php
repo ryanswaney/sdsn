@@ -41,7 +41,7 @@
 
       <?php the_field('sdsn.edu_sidebar'); ?>
 
-      <?php Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-edu-signup' ) ); ?>
+      <?php //Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-edu-signup' ) ); ?>
 
     </div>
 

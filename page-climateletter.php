@@ -30,17 +30,17 @@
 
   <div class="row">
 
-    <div class="small-12 large-7 columns">
-      
-      <?php the_content(); ?>
-
-    </div>
-
-    <div class="small-12 large-5 columns">
+    <div class="small-12 large-5 large-push-7 columns" style="margin-bottom: 3rem;">
 
       <?php the_field('climate_letter_sidebar_text'); ?>
 
       <?php Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-sf-climateletter' ) ); ?>
+
+    </div>
+
+    <div class="small-12 large-7 large-pull-5 columns">
+      
+      <?php the_content(); ?>
 
     </div>
 

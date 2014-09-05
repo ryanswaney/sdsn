@@ -41,7 +41,7 @@
 
           <div class="row">
             <div class="large-12 columns">
-                <?php Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-salesforce' ) ); ?>
+                <?php Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-mc-basic-ajax' ) ); ?>
             </div>
           </div>
 

@@ -43,6 +43,31 @@
 
   add_shortcode( 'button', 'shortcode_button_func' );
 
+  function shortcode_pullquote_func( $atts, $content = null) {
+
+    // Shortcode to create a pullquote within text. Differs from normal <blockquote>.
+
+    extract(
+      shortcode_atts(
+        array(
+          'align' => '' // accepts left or right
+          ), $atts));
+
+    if( !empty( $content ) ) :
+
+      $output = '<blockquote class="pullquote ';
+      $output .= esc_attr( $align );
+      $output .= '">';
+      $output .= do_shortcode( $content );
+      $output .= '</blockquote>';
+
+      return $output;
+
+    endif;
+  }
+
+  add_shortcode( 'pullquote', 'shortcode_pullquote_func' );
+
   function shortcode_tooltip_func( $atts, $content = null ) {
 
     // Shortcode to create the tooltip compontent found in Foundation

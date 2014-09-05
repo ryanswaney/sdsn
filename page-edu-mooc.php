@@ -30,19 +30,23 @@
 </div>
 
   <div class="row">
-
     <div class="small-12 large-7 columns">
-      
-      <?php the_content(); ?>
-
+      <?php the_field('mooc_call_to_action'); ?>
     </div>
 
     <div class="small-12 large-5 columns">
+      <?php Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-mooc' ) ); ?>
+    </div>
+  </div>
 
+  <div class="row">
+
+    <div class="small-12 large-7 columns">
+      <?php the_content(); ?>
+    </div>
+
+    <div class="small-12 large-5 columns">
       <?php the_field('mooc_sidebar'); ?>
-
-      <?php Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-mooc-climate' ) ); ?>
-
     </div>
 
   </div>

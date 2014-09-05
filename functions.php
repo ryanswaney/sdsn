@@ -71,6 +71,9 @@
   // SDSN Thematic Groups
   require_once( 'custom-post-types/cpt-publications.php' );
 
+  // SDSN in Press
+  //require_once( 'custom-post-types/cpt-press.php' );
+
 
 	/* ========================================================================================================================
 	
