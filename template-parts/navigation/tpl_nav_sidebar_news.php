@@ -5,6 +5,7 @@
 </ul>
 
 <?php
+  /*
   $args = array(
     'orderby' => 'title',
     'show_count' => 0,
@@ -16,12 +17,22 @@
     'taxonomy' => 'category',
     'title_li' => ''
   );
+  */
 ?>
+<!--
 <ul class="side-nav">
   <li>News Categories</li>
   <li class="divider"></li>
 <?php wp_list_categories($args); ?>
 </ul>
+-->
+
+<?php
+  wp_nav_menu(
+    array(
+      'theme_location' => 'news-cat-menu',
+      'items_wrap' => '<ul class="side-nav"><li id="item-id">News Categories</li><li class="divider"></li>%3$s</ul>' )
+  ); ?>
 
 <ul class="side-nav">
   <li>Archives</li>

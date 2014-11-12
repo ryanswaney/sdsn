@@ -68,8 +68,6 @@
 
     <?php if($post_objects) : ?>
 
-      <h4>Staff</h4>
-
       <ul class="small-block-grid-1 medium-block-grid-3">
       <?php foreach( $post_objects as $post ) : ?>
         <?php setup_postdata($post); ?>

@@ -12,7 +12,7 @@
 
     <?php if ( wp_script_is( 'scrollTo_js', 'done' ) && wp_script_is( 'localScroll_js', 'done' ) ) : ?>
 
-    <script>jQuery.localScroll({ offset: { top: -50} });</script>
+    <script>//jQuery.localScroll({ offset: { top: -50} });</script>
 
     <?php endif; ?>
 

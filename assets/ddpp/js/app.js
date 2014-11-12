@@ -1,31 +1,12 @@
-jQuery(window).load(function() {
-  jQuery("[data-match-height]").each(function() {
-    var parentRow = jQuery(this),
-        childrenCols = jQuery(this).find("[data-height-watch]"),
-        childHeights = childrenCols.map(function(){ return jQuery(this).outerHeight(); }).get(),
-        tallestChild = Math.max.apply(Math, childHeights);
-        childrenCols.css('min-height', tallestChild);
+// Foundation JavaScript
+// Documentation can be found at: http://foundation.zurb.com/docs
+$(document).foundation();
+
+
+// menu toggle 
+$(".menu-icon").click(function() {
+        $(".full-nav").slideToggle(200);
   });
-});
-
-
-// Web Font Loader
-// http://www.apache.org/licenses/LICENSE-2.0
-/*
-WebFontConfig = {
-    typekit: { id: 'ond0lpv' }
-  };
-
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-              '://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
-*/
 
 
 // Ajaxifying MailChimp submissions for the SDSN newsletter.
@@ -37,7 +18,7 @@ WebFontConfig = {
   
     ajaxMailChimpForm($("#subscribe-form"), $("#subscribe-result"));
 
-    ajaxMailChimpForm($("#subscribe-form-mobile"), $("#subscribe-result-mobile"));
+    //ajaxMailChimpForm($("#subscribe-form-mobile"), $("#subscribe-result-mobile"));
 
     // Turn the given MailChimp form into an ajax version of it.
     // If resultElement is given, the subscribe result is set as html to
@@ -96,8 +77,7 @@ WebFontConfig = {
                       $(".mchimp-sub").fadeOut( "100", function() {
 
                         // Add alert to subscription result div + message
-                        $resultElement.addClass("alert-box secondary")
-                        $resultElement.html("You're already subscribed. Thank you.")
+                        $resultElement.html("You're already subscribed. Thank you.");
 
                         // Fade in result div
                         $resultElement.fadeIn( "100", function() {
@@ -114,7 +94,7 @@ WebFontConfig = {
               
                       });
 
-                      $resultElement.addClass("alert-box warning")
+                    
                       $resultElement.html( message );
 
                       $resultElement.fadeIn( "100", function() {
@@ -129,7 +109,7 @@ WebFontConfig = {
 
                     $(".mchimp-sub").fadeOut( "100", function() {
                       // Animation complete
-                      $resultElement.addClass("alert-box success")
+                      //$resultElement.addClass("alert-box success")
                       $resultElement.html( data.msg );
 
                       $resultElement.fadeIn( "100", function() {
@@ -146,3 +126,17 @@ WebFontConfig = {
   });
 
 })(jQuery);
+
+// Open Sans
+WebFontConfig = {
+    google: { families: [ 'Open+Sans:300italic,400italic,700italic,400,300,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();

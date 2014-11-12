@@ -34,7 +34,7 @@
 
       <?php the_field('climate_letter_sidebar_text'); ?>
 
-      <?php Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-sf-climateletter' ) ); ?>
+      <?php //  Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-sf-climateletter' ) ); ?>
 
     </div>
 

@@ -60,7 +60,7 @@
         <?php $args = array(
           'post_type' => 'post',
           'posts_per_page' => $news_post_limit,
-          'category_name' => $thematic_group_publication_category->slug,
+          'category_name' => 'tg06',
           'category__not_in' => array( 31 ) ); // in news but not events
         ?>
 

@@ -29,6 +29,8 @@
 	
 	register_nav_menus(array('primary' => 'Primary Navigation'));
 
+  register_nav_menus(array('news-cat-menu' => 'News Category Menu'));
+
 	require_once( 'lib/foundation_topbar_filters.php' );
 	require_once( 'lib/foundation_topbar_menu.php' );
 
@@ -103,8 +105,8 @@
     wp_enqueue_style( 'foundation_icons' );
 
     // Open Sans
-		wp_register_style( 'open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700', '', '', 'screen' );
-    wp_enqueue_style( 'open-sans' );
+		//wp_register_style( 'open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700', '', '', 'screen' );
+    //wp_enqueue_style( 'open-sans' );
 
     // Theme CSS
 		wp_register_style( 'screen', get_stylesheet_directory_uri().'/style.css', '', '', 'screen' );
@@ -138,12 +140,12 @@
 		wp_enqueue_script( 'sdsn_js' );
 
     // ScrollTo JS
-    wp_register_script( 'scrollTo_js', get_stylesheet_directory_uri().'/assets/js/jquery.scrollTo.min.js', array( 'jquery' ), '', true );
-    wp_enqueue_script( 'scrollTo_js' );
+    //wp_register_script( 'scrollTo_js', get_stylesheet_directory_uri().'/assets/js/jquery.scrollTo.min.js', array( 'jquery' ), '', true );
+    //wp_enqueue_script( 'scrollTo_js' );
 
     // localScroll JS
-    wp_register_script( 'localScroll_js', get_stylesheet_directory_uri().'/assets/js/jquery.localScroll.min.js', array( 'jquery' ), '', true );
-    wp_enqueue_script( 'localScroll_js' );
+    //wp_register_script( 'localScroll_js', get_stylesheet_directory_uri().'/assets/js/jquery.localScroll.min.js', array( 'jquery' ), '', true );
+    //wp_enqueue_script( 'localScroll_js' );
 
 	}	
 

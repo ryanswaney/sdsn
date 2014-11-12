@@ -20,6 +20,24 @@
 
 	<meta name="google-translate-customization" content="31e34ac9c4453d0-493d04ba3be260eb-g5c114967ba17ecdb-9"></meta>
 
+	<script>
+		// Web Font Loader
+// http://www.apache.org/licenses/LICENSE-2.0
+WebFontConfig = {
+    typekit: { id: 'ond0lpv' }
+  };
+
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+              '://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+  </script>
+
 	<?php wp_head(); ?>
 
   <!--[if lt IE 9]>
