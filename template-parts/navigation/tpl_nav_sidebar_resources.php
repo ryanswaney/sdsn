@@ -4,7 +4,7 @@
     'show_count' => 0,
     'pad_counts' => 0,
     'hide_empty' => 1,
-    'exclude' => array( '44','47', '66', '97', '98', '102', '103'), // Exclude Feature, Thematic Group, and Relevant Thematic Group, Climdate, Data/Financing categories
+    'exclude' => array( '60','47', '66', '54', '4', '2', '59'), // Exclude Feature, Thematic Group, and Relevant Thematic Group, Climdate, Data/Financing categories
     'depth' => 1,
     'hierarchical' => true,
     'taxonomy' => 'location', // Publication Type, cpt-publications.php
