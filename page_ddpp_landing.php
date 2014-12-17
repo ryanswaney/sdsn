@@ -29,19 +29,9 @@
           <li>
             <a href="http://unsdsn.org/what-we-do/deep-decarbonization-pathways/organization/">Organization</a>
           </li>
-          <!--
-          <li>
-            <a href="">Approach</a>
-          </li>
-          -->
           <li>
             <a href="http://unsdsn.org/what-we-do/deep-decarbonization-pathways/timeline/">Timeline</a>
           </li>
-          <!--
-          <li>
-            <a href="#news">News</a>
-          </li>
-          -->
         </ul>
       </section>
     </nav>
@@ -49,7 +39,202 @@
 
     <div class="main" role="main">
 
-      <?php if( have_rows('ddpp_landing_feature_section') ): ?>
+
+      <?php if( have_rows('ddpp_highlights_section') ): ?>
+
+        <?php 
+
+          $highlights = get_field('ddpp_highlights_section'); 
+          $highlights_count = count( $highlights );
+
+          echo '<!-- highlights ('. $highlights_count .') -->';
+
+        ?>
+
+        <?php if ( $highlights_count == 1 ) : ?>
+
+
+      <section class="feature">
+        <div class="container">
+
+        <?php while ( have_rows('ddpp_highlights_section') ) : the_row(); ?>
+
+          <article class="featured-post">
+            <div class="feature-post-details">
+              <section class="post-meta">
+                <h1 class="feature-title"><?php the_sub_field('ddpp_highlights_title');?></h1>
+                <p class="feature-summary"><?php the_sub_field('ddpp_highlights_blurb');?></p>
+              </section>
+
+              <?php $featured_image = get_sub_field('ddpp_highlights_image'); ?>
+
+            <?php if ( !empty( $featured_image ) ): ?>
+
+              <section class="post-cover">
+                <?php $feature_link = get_sub_field('ddpp_highlights_link'); ?>
+                <?php if ( !empty( $feature_link ) ): ?>
+                <a href="<?php echo the_sub_field('ddpp_highlights_link'); ?>">
+                  <img src="<?php echo $featured_image['url']; ?>" alt="<?php echo $featured_image['alt']; ?>" />
+                </a>
+                <?php else : ?>
+                  <img src="<?php echo $featured_image['url']; ?>" alt="<?php echo $featured_image['alt']; ?>" />
+                <?php endif; ?>
+              </section>
+
+            <?php endif; // featured image subfield ACF ?>
+
+            </div>
+          </article>
+
+          <?php if( have_rows('ddpp_highlights_flex_file') ): ?>
+
+          <ul class="pub-downloads">
+
+            <?php while ( have_rows('ddpp_highlights_flex_file') ) : the_row(); ?>
+
+              <?php if( get_row_layout() == 'ddpp_highlights_flex_file_single' ): ?>
+
+                <?php $file = get_sub_field('ddpp_highlights_flex_file_single_download'); ?>
+
+                <li>
+                  <a href="<?php echo $file['url']; ?>" class="download-btn">
+                    <?php the_sub_field('ddpp_highlights_flex_file_single_btn_title'); ?>
+                  </a>
+                </li>
+
+              <?php elseif( get_row_layout() == 'ddpp_highlights_flex_file_multi' ): ?>
+
+                <?php $i == 1; ?>
+
+                <li>
+                  <button data-dropdown="drop<?php echo $i; ?>" aria-controls="drop<?php echo $i; ?>" aria-expanded="false" class="dropdown-btn">
+                    <?php the_sub_field('ddpp_highlights_flex_multi_btn_title'); ?>
+                  </button>
+                  <ul id="drop<?php echo $i; ?>" data-dropdown-content class="f-dropdown" role="menu" aria-hidden="false">
+                  <?php while ( have_rows('ddpp_highlights_flex_multi_files') ) : the_row(); ?>
+                    <?php $file = get_sub_field('ddpp_highlights_flex_multi_f_download'); ?>
+                    <li role="menuitem">
+                      <a href="<?php echo $file['url']; ?>"><?php the_sub_field('ddpp_highlights_flex_multi_files_f_title');?></a>
+                    </li>
+                  <?php endwhile; //repeater multifile ?>
+                  </ul>
+                </li>
+
+                <?php $i++; ?>
+
+              <?php endif; ?>
+
+            <?php endwhile; // ddpp_highlights_flex_file loop ?>
+
+          </ul>
+
+          <?php endif; // ddpp_highlights_flex_file ?>
+
+        <?php endwhile ;?>
+
+
+        </div>
+      </section>
+
+        <?php elseif( $highlights_count > 1 ): ?>
+
+      <section class="feature">
+        <div class="container">
+
+        <?php while ( have_rows('ddpp_highlights_section') ) : the_row(); ?>
+
+          <article class="featured-post">
+            <div class="feature-post-details">
+              <section class="post-meta">
+                <h1 class="feature-title"><?php the_sub_field('ddpp_highlights_title');?></h1>
+                <p class="feature-summary"><?php the_sub_field('ddpp_highlights_blurb');?></p>
+              </section>
+
+              <?php $featured_image = get_sub_field('ddpp_highlights_image'); ?>
+
+            <?php if ( !empty( $featured_image ) ): ?>
+
+              <section class="post-cover">
+                <?php $feature_link = get_sub_field('ddpp_highlights_link'); ?>
+                <?php if ( !empty( $feature_link ) ): ?>
+                <a href="<?php echo the_sub_field('ddpp_highlights_link'); ?>">
+                  <img src="<?php echo $featured_image['url']; ?>" alt="<?php echo $featured_image['alt']; ?>" />
+                </a>
+                <?php else : ?>
+                  <img src="<?php echo $featured_image['url']; ?>" alt="<?php echo $featured_image['alt']; ?>" />
+                <?php endif; ?>
+              </section>
+
+            <?php endif; // featured image subfield ACF ?>
+
+            </div>
+          </article>
+
+          <?php if( have_rows('ddpp_highlights_flex_file') ): ?>
+
+          <ul class="pub-downloads" style="margin-bottom: 2rem;">
+
+            <?php while ( have_rows('ddpp_highlights_flex_file') ) : the_row(); ?>
+
+              <?php if( get_row_layout() == 'ddpp_highlights_flex_file_single' ): ?>
+
+                <?php $file = get_sub_field('ddpp_highlights_flex_file_single_download'); ?>
+
+                <li>
+                  <a href="<?php echo $file['url']; ?>" class="download-btn">
+                    <?php the_sub_field('ddpp_highlights_flex_file_single_btn_title'); ?>
+                  </a>
+                </li>
+
+              <?php elseif( get_row_layout() == 'ddpp_highlights_flex_file_multi' ): ?>
+
+                <?php $i == 1; ?>
+
+                <li>
+                  <button data-dropdown="drop<?php echo $i; ?>" aria-controls="drop<?php echo $i; ?>" aria-expanded="false" class="dropdown-btn">
+                    <?php the_sub_field('ddpp_highlights_flex_multi_btn_title'); ?>
+                  </button>
+                  <ul id="drop<?php echo $i; ?>" data-dropdown-content class="f-dropdown" role="menu" aria-hidden="false">
+                  <?php while ( have_rows('ddpp_highlights_flex_multi_files') ) : the_row(); ?>
+                    <?php $file = get_sub_field('ddpp_highlights_flex_multi_f_download'); ?>
+                    <li role="menuitem">
+                      <a href="<?php echo $file['url']; ?>"><?php the_sub_field('ddpp_highlights_flex_multi_files_f_title');?></a>
+                    </li>
+                  <?php endwhile; //repeater multifile ?>
+                  </ul>
+                </li>
+
+                <?php $i++; ?>
+
+              <?php endif; ?>
+
+            <?php endwhile; // ddpp_highlights_flex_file loop ?>
+
+          </ul>
+
+          <?php endif; // ddpp_highlights_flex_file ?>
+
+        <?php endwhile ;?>
+
+
+        </div>
+      </section>
+
+        <?php endif; ?> 
+        
+      <?php endif; // highlight section ACF ?>
+
+
+
+
+
+
+
+
+
+
+
+      <?php if( have_rows('ddpp_landing_feature_section_x') ): ?>
 
       <section class="feature">
         <div class="container">
@@ -122,32 +307,6 @@
 
             <?php endwhile; ?>
 
-              <!--
-              <li>
-                <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="dropdown-btn">Download Report</button><br>
-                <ul id="drop1" data-dropdown-content class="f-dropdown" role="menu" aria-hidden="false">
-                  <li role="menuitem"><a href="#">Full Report</a></li>
-                  <li role="menuitem"><a href="#">Full Report (low res)</a></li>
-                </ul>
-              </li>
-              <li>
-                <button href="#" data-dropdown="drop2" aria-controls="drop2" aria-expanded="false" class="dropdown-btn">Download Country Chapters</button><br>
-                <ul id="drop2" data-dropdown-content class="f-dropdown" role="menu" aria-hidden="false">
-                  <li role="menuitem"><a href="#">Australia</a></li>
-                  <li role="menuitem"><a href="#">Canada</a></li>
-                  <li role="menuitem"><a href="#">China</a></li>
-                  <li role="menuitem"><a href="#">France</a></li>
-                  <li role="menuitem"><a href="#">Indonesia</a></li>
-                  <li role="menuitem"><a href="#">Japan</a></li>
-                  <li role="menuitem"><a href="#">Mexico</a></li>
-                  <li role="menuitem"><a href="#">Russia</a></li>
-                  <li role="menuitem"><a href="#">South Africa</a></li>
-                  <li role="menuitem"><a href="#">South Korea</a></li>
-                  <li role="menuitem"><a href="#">United Kingdom</a></li>
-                  <li role="menuitem"><a href="#">United States</a></li>
-                </ul>
-              </li>
-              -->
             </ul>
 
           <?php endif; // feature files ?>
