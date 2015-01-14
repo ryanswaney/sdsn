@@ -59,7 +59,7 @@
 
         <?php while ( have_rows('ddpp_highlights_section') ) : the_row(); ?>
 
-          <article class="featured-post">
+          <article class="feature-post">
             <div class="feature-post-details">
               <section class="post-meta">
                 <h1 class="feature-title"><?php the_sub_field('ddpp_highlights_title');?></h1>
@@ -138,13 +138,25 @@
 
         <?php elseif( $highlights_count > 1 ): ?>
 
+      <?php $feature_i = 0; ?>
+
       <section class="feature">
         <div class="container">
 
         <?php while ( have_rows('ddpp_highlights_section') ) : the_row(); ?>
 
-          <article class="featured-post">
+          <?php if ( $feature_i == 0 ) : ?>
+
+          <article class="feature-post">
             <div class="feature-post-details">
+
+          <?php else : ?>
+
+          <article class="featured-post-split">
+            <div class="feature-post-split-details">
+
+          <?php endif; ?>
+
               <section class="post-meta">
                 <h1 class="feature-title"><?php the_sub_field('ddpp_highlights_title');?></h1>
                 <p class="feature-summary"><?php the_sub_field('ddpp_highlights_blurb');?></p>
@@ -168,7 +180,6 @@
             <?php endif; // featured image subfield ACF ?>
 
             </div>
-          </article>
 
           <?php if( have_rows('ddpp_highlights_flex_file') ): ?>
 
@@ -213,6 +224,10 @@
           </ul>
 
           <?php endif; // ddpp_highlights_flex_file ?>
+
+          </article>
+
+          <?php $feature_i++; ?>
 
         <?php endwhile ;?>
 
