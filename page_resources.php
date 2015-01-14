@@ -225,7 +225,7 @@
           array (
             'taxonomy' => 'location',
             'field' => 'slug',
-            'terms' => array( 'briefing-papers', 'feature' ),
+            'terms' => array( 'working-papers', 'feature' ),
             'operator' => 'NOT IN'
           ),
           array (
@@ -272,7 +272,7 @@
     <?php
       /** CPT Query: sdsn-publications
       *** Get recent posts from publications, limited to a subset of custom taxonomies.
-      *** Taxonomy ref: Briefing Papers, NOT Feature
+      *** Taxonomy ref: Working Papers, NOT Feature
       **/
       $args = array(
         'post_type' => 'sdsn-publications',
@@ -282,7 +282,7 @@
           array (
             'taxonomy' => 'location',
             'field' => 'slug',
-            'terms' => array( 'briefing-papers' ),
+            'terms' => array( 'working-papers' ),
             'operator' => 'IN'
           ),
           array (
@@ -297,7 +297,7 @@
 
     <?php $pubs_by_term = get_posts( $args ); ?>
 
-    <h4 class="border-top margin-bottom-2"><a href="/resources/publication/type/briefing-papers/">Briefing Papers</a></h4>
+    <h4 class="border-top margin-bottom-2"><a href="/resources/publication/type/working-papers/">Working Papers</a></h4>
 
     <ul class="small-block-grid-1 medium-block-grid-3">
 

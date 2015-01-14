@@ -36,7 +36,7 @@
 
     <div class="small-12 large-4 columns">
 
-        <?php $args= array( 'post_type'=>'sdsn-publications', 'posts_per_page' => 5, 'location' => 'data' ) ?>
+        <?php $args= array( 'post_type'=>'sdsn-publications', 'posts_per_page' => 5, 'location' => 'data-monitoring-accountability' ) ?>
 
         <?php $related_posts= get_posts( $args ); ?>
 
@@ -66,7 +66,7 @@
             <?php endforeach; ?>
             <?php if ( count( $related_posts )>= 5 ) : ?>
             <li>
-                <a class="button tiny radius" href="/resources/publication/type/data">View All</a>
+                <a class="button tiny radius" href="/resources/publication/type/data-monitoring-accountability">View All</a>
             </li>
             <?php endif; ?>
 
@@ -78,7 +78,7 @@
 
         <?php // RELATED NEWS
 
-            $args = array( 'post_type'=>'post', 'posts_per_page' => '5', 'category_name' => 'data' ) ?>
+            $args = array( 'post_type'=>'post', 'posts_per_page' => '5', 'category_name' => 'data-monitoring-accountability' ) ?>
 
         <?php $related_news= get_posts( $args ); ?>
 
@@ -108,7 +108,7 @@
             <?php endforeach; ?>
             <?php if ( count( $related_news )>= 5 ) : ?>
             <li>
-                <a class="button tiny radius" href="/news/category/data">View All</a>
+                <a class="button tiny radius" href="/news/category/data-monitoring-accountability">View All</a>
             </li>
             <?php endif; ?>
 

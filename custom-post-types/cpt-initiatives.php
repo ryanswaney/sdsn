@@ -35,7 +35,7 @@ function cpt_register_sdsn_initiatives() {
 		'show_in_menu'        => true,
 		'show_in_nav_menus'   => true,
 		'show_in_admin_bar'   => true,
-		'menu_position'       => 51,
+		'menu_position'       => 52,
 		'can_export'          => true,
 		'has_archive'         => false,
 		'exclude_from_search' => false,
