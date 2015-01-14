@@ -63,11 +63,7 @@
             <div class="feature-post-details">
               <section class="post-meta">
                 <h1 class="feature-title"><?php the_sub_field('ddpp_highlights_title');?></h1>
-<<<<<<< HEAD
-                <div class="feature-summary"><?php the_sub_field('ddpp_highlights_blurb');?></div>
-=======
                 <p class="feature-summary"><?php the_sub_field('ddpp_highlights_blurb');?></p>
->>>>>>> FETCH_HEAD
               </section>
 
               <?php $featured_image = get_sub_field('ddpp_highlights_image'); ?>
@@ -156,22 +152,14 @@
 
           <?php else : ?>
 
-<<<<<<< HEAD
           <article class="feature-post-split">
-=======
-          <article class="featured-post-split">
->>>>>>> FETCH_HEAD
             <div class="feature-post-split-details">
 
           <?php endif; ?>
 
               <section class="post-meta">
                 <h1 class="feature-title"><?php the_sub_field('ddpp_highlights_title');?></h1>
-<<<<<<< HEAD
-                <div class="feature-summary"><?php the_sub_field('ddpp_highlights_blurb');?></div>
-=======
                 <p class="feature-summary"><?php the_sub_field('ddpp_highlights_blurb');?></p>
->>>>>>> FETCH_HEAD
               </section>
 
               <?php $featured_image = get_sub_field('ddpp_highlights_image'); ?>
@@ -239,15 +227,12 @@
 
           </article>
 
-<<<<<<< HEAD
           <?php if ( $feature_i == 0 ) : ?>
 
             <hr class="section-divider">
 
           <?php endif; ?>
 
-=======
->>>>>>> FETCH_HEAD
           <?php $feature_i++; ?>
 
         <?php endwhile ;?>
@@ -259,15 +244,6 @@
         <?php endif; ?> 
         
       <?php endif; // highlight section ACF ?>
-
-
-
-
-
-
-
-
-
 
 
       <?php if( have_rows('ddpp_landing_feature_section_x') ): ?>
