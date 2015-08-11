@@ -1,4 +1,4 @@
-<div class="page-header">
+<div class="page-header tg-header">
 	<div class="row">
 		<div class="small-12 large-10 columns">
       <span>Solutions Initiative</span>

@@ -96,6 +96,39 @@
 
     <?php endif; ?>
 
+        <?php
+    /** Get ACF Fields
+    *** Field Group: Leadership Council -- Emeritus
+    *** Queried Field: leadership_council_emeritus
+    **/
+    ?>
+    <?php $post_objects = get_field('leadership_council_emeritus'); ?>
+
+    <?php if($post_objects) : ?>
+
+      <h4>Emeritus Members</h4>
+
+      <ul class="small-block-grid-1 medium-block-grid-3">
+      <?php foreach( $post_objects as $post ) : ?>
+        <?php setup_postdata($post); ?>
+        <?php $p_affiliation = get_field('people_title'); ?>
+        <li>
+          <article class="post blurb">
+            <header>
+              <?php if ( has_post_thumbnail() ) : ?>
+              <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_post_thumbnail( 'thumbnail', array( 'class' => 'feature-photo' ) ); ?></a>
+              <?php endif; ?>
+              <h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_title(); ?></a></h1>
+              <div class="post-meta"><?php echo $p_affiliation;?></div>
+            </header>
+          </article>
+        </li>
+      <?php endforeach; ?>
+      </ul>
+      <?php wp_reset_postdata(); ?>
+
+    <?php endif; ?>
+
   </div>
 </div>
 
