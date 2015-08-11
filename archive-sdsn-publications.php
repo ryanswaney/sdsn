@@ -62,6 +62,7 @@
             <div class="post-meta"><time datetime="<?php the_time('Y-n-D'); ?>" pubdate><?php the_time('F j'); ?></time></div>
             <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
           </header>
+          <?php the_excerpt(); ?>
         </article>
       </li>
       <?php $prev_year = $this_year; ?>

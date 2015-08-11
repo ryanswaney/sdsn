@@ -16,21 +16,19 @@
     )
 ); ?>
 
-<?php Starkers_Utilities::get_template_parts( array( 'template-parts/headers/tpl_header_page' ) ); ?>
+<?php Starkers_Utilities::get_template_parts( array( 'template-parts/headers/tpl_header_page-nosidebar' ) ); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 <div class="row">
 
-  <div class="small-12 large-2 columns show-for-large-up">
-    <?php Starkers_Utilities::get_template_parts( array( 'template-parts/navigation/tpl_nav_sidebar_page' ) ); ?>
-  </div>
-
-  <div class="small-12 large-8 end columns">
+  <div class="small-12 large-8 columns">
 
     <? the_content(); ?>
 
   </div>
+
+</div>
 
   <div class="row">
 

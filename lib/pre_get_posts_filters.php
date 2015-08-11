@@ -8,7 +8,7 @@
     if ( is_admin() || ! $query->is_main_query() )
       return;
 
-    if ( is_archive(category-i.d) ) {
+    if ( is_archive() ) {
       $query->set( 'posts_per_page', -1 ); // show all posts -1
       return;
     }

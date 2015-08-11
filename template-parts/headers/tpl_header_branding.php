@@ -12,9 +12,15 @@
               <li class="small button icon-button green">
                 <a href="https://twitter.com/UNSDSN" title="Follow SDSN on Twitter"><i class="fi-social-twitter"></i></a>
               </li>
+              <li class="small button green" style="padding: 0;">
+                <a href="http://sdsnedu.org/" style="display: block; padding: .85rem 1rem">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ed_icon_.png" style="max-width: 25px;">
+                </a>
+              </li>
               <li class="small button icon-button green">
                 <a href="http://unsdsn.org/feed/"><i class="fi-rss"></i></a>
               </li>
+              
             </ul>
           </div>
         </div>
