@@ -169,7 +169,7 @@
         'post_type' => 'sdsn-publications',
         'posts_per_page' => 2,
         'tax_query' => array(
-          relationship => 'AND',
+          'relationship' => 'AND',
           array (
             'taxonomy' => 'location',
             'field' => 'slug',
@@ -233,7 +233,7 @@
             'field' => 'slug',
             'terms' => array( 'thematic-group-reports' ),
             'include_children' => true,
-            operator => 'IN' ) 
+            'operator' => 'IN' ) 
           )
         
     ); ?>
