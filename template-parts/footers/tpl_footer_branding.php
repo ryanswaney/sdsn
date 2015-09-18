@@ -46,16 +46,6 @@
                       +1 (212) 870 2792
                     </address>
                   </li>
-                  <li class="reversed-text">
-                    <strong style="font-size: 0.8125rem;">New Delhi</strong>
-                    <address style="font-style: normal; font-size: 0.8125rem;">
-                      N 21, Second Floor<br />
-                      Green Park Extension<br />
-                      New Delhi 110016<br />
-                      India<br />
-                      +(91) 11 41030859
-                    </address>
-                  </li>
                 </ul>
 
               </div>
