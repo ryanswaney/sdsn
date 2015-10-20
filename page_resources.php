@@ -215,7 +215,7 @@
     <?php
       /** CPT Query: sdsn-publications
       *** Get recent posts from publications, limited to a subset of custom taxonomies.
-      *** Taxonomy ref: Thematic Group Reports NOT Briefing Papers, NOT Feature
+      *** Taxonomy ref: Thematic Network Reports NOT Briefing Papers, NOT Feature
       **/
       $args = array(
         'post_type' => 'sdsn-publications',
@@ -231,7 +231,7 @@
           array (
             'taxonomy' => 'location',
             'field' => 'slug',
-            'terms' => array( 'thematic-group-reports' ),
+            'terms' => array( 'thematic-network-reports' ),
             'include_children' => true,
             'operator' => 'IN' ) 
           )
@@ -240,7 +240,7 @@
 
     <?php $pubs_by_term = get_posts( $args ); ?>
 
-    <h4 class="border-top margin-bottom-2"><a href="/resources/publication/type/thematic-group-reports/">Thematic Group Reports</a></h4>
+    <h4 class="border-top margin-bottom-2"><a href="/resources/publication/type/thematic-network-reports/">Thematic Network Reports</a></h4>
 
     <ul class="small-block-grid-1 medium-block-grid-2">
 

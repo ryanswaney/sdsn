@@ -18,7 +18,7 @@ function cpt_register_sdsn_groups() {
 	);
 
 	$rewrite = array(
-		'slug'                => '/what-we-do/thematic-groups',
+		'slug'                => '/what-we-do/thematic-networks',
 		'with_front'          => false,
 		'pages'               => true,
 		'feeds'               => true,

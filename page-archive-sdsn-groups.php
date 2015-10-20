@@ -34,7 +34,7 @@
 
     <div class="small-12 large-10 columns">
 
-      <h4 id="groups" class="border-top">Thematic Groups</h4>
+      <h4 id="groups" class="border-top">Thematic Networks</h4>
 
     <?php 
 

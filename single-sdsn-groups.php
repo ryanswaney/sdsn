@@ -143,7 +143,7 @@
           <?php echo '<!--'. count( $related_tg_pubs ) . '-->'; ?>
 
           <a id="resources"></a>
-          <h6 class="border-top">Thematic Group Resources</h6>
+          <h6 class="border-top">Thematic Network Resources</h6>
 
           <ul class="no-bullet margin-bottom-2">
 
@@ -296,11 +296,11 @@
 
     <div class="small-12 columns">
 
-      <h4 id="other-tgs" class="border-top">Other Thematic Groups</h4>
+      <h4 id="other-tgs" class="border-top">Other Thematic Networks</h4>
 
       <div class="row">
         <div class="small-12 large-8 columns">
-          <p>The Sustainable Development Solutions Network (SDSN) has established 12 Thematic Groups comprising leading scientists, engineers, academics and practitioners from business and civil society to promote solutions to key challenges of sustainable development. The Thematic Groups are solution oriented rather than research oriented and aim to identify practical solutions to the challenges of sustainable development.</p>
+          <p>The Sustainable Development Solutions Network (SDSN) has established 12 Thematic Networks comprising leading scientists, engineers, academics and practitioners from business and civil society to promote solutions to key challenges of sustainable development. The Thematic Networks are solution oriented rather than research oriented and aim to identify practical solutions to the challenges of sustainable development.</p>
         </div>
       </div>
 
