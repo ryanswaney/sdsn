@@ -1,7 +1,7 @@
 <div class="page-header">
-	<div class="row">
-		<div class="small-12 large-10 columns">
-			<h1 class="page-title"><?php the_title(); ?></h1>
+  <div class="row">
+    <div class="small-12 large-8 columns">
+      <h1 class="page-title"><?php the_title(); ?></h1>
 
       <?php
       /** Get ACF Fields
@@ -14,6 +14,11 @@
       <h4><?php the_field('people_title'); ?></h4>
       <?php endif ;?>
 
-		</div>
-	</div>
+    </div>
+    <?php if ( has_post_thumbnail() ) : ?>
+    <div class="small-12 large-4 columns">
+      <?php the_post_thumbnail('thumbnail'); ?>
+    </div>
+    <?php endif; ?>
+  </div>
 </div>

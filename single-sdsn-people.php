@@ -20,14 +20,41 @@
   <?php Starkers_Utilities::get_template_parts( array( 'template-parts/headers/tpl_header_single-sdsn-people' ) ); ?>
 
   <div class="row">
-    <div class="small-12 medium-8 columns">
+    <div class="small-12 medium-4 medium-push-8 columns people-contact">
+      <!-- Contact Information -->
+
+      <?php if( get_field('people_email') ) : ?>
+        <p>
+          <strong>Email Address</strong><br>
+          <?php echo '<a href="mailto:' . get_field('people_email') . '">' . get_field('people_email') . '</a>'; ?>
+        </p>
+      <?php endif; // email ?>
+
+      <?php if( get_field('people_phone') ) : ?>
+        <p>
+          <strong>Phone</strong><br>
+          <?php echo get_field('people_phone'); ?>
+        </p>
+      <?php endif; // phone ?>
+
+      <?php if( get_field('people_address') ) : ?>
+        <p>
+          <strong>Address</strong><br>
+          <?php echo get_field('people_address'); ?>
+        </p>
+      <?php endif; // address ?>
+
+      <?php if( get_field('people_twitter') ) : ?>
+        <p>
+          <strong>Twitter</strong><br>
+          <?php echo '<a href="' . get_field('people_twitter') . '">' . get_field('people_twitter') . '</a>'; ?>
+        </p>
+      <?php endif; // Twitter ?>
+      <hr class="show-for-small">
+    </div>
+    <div class="small-12 medium-8 medium-pull-4 columns">
       <?php the_content(); ?>
     </div>
-  <?php if ( has_post_thumbnail() ) : ?>
-    <div class="small-12 medium-3 end columns">
-      <?php the_post_thumbnail('medium'); ?>
-    </div>
-  <?php endif; ?>
   </div>			
 
 <?php endwhile; ?>

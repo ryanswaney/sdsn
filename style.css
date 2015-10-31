@@ -485,6 +485,10 @@ Tags:
         color: #003f72;
         font-size: 1.5rem;
     }
+    .people-contact > p {
+        font-size: 85%;
+        margin-bottom: .5em;
+    }
     .post {
         /* border-bottom: 1px solid #ccc; */
         margin-bottom: 2rem;
