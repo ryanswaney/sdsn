@@ -6,7 +6,7 @@
  *
  */
 ?>
-<?php 
+<?php
   Starkers_Utilities::get_template_parts(
     array(
       'template-parts/headers/tpl_header_site',
@@ -27,7 +27,7 @@
   </div>
 
   <div class="small-12 large-8 end columns">
-    <? the_content(); ?>
+    <?php the_content(); ?>
   </div>
 
 </div>
@@ -38,7 +38,7 @@
 
     <h4 class="border-top margin-bottom-2">Member Index</h4>
 
-    <?php 
+    <?php
 
         $args = array(
         'post_type' => 'members',
@@ -104,5 +104,5 @@
     array(
       'template-parts/footers/tpl_footer_branding',
       'template-parts/footers/tpl_footer_site'
-    ) 
+    )
   ); ?>

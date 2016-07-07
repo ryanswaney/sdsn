@@ -6,7 +6,7 @@
  *
  */
 ?>
-<?php 
+<?php
   Starkers_Utilities::get_template_parts(
     array(
       'template-parts/headers/tpl_header_site',
@@ -24,7 +24,7 @@
 
   <div class="small-12 large-8 columns">
 
-    <? the_content(); ?>
+    <?php the_content(); ?>
 
   </div>
 
@@ -36,7 +36,7 @@
 
       <h4 id="groups" class="border-top">Solutions Initiatives</h4>
 
-    <?php 
+    <?php
 
         $args = array(
         'post_type' => 'solution-initiatives',
@@ -79,5 +79,5 @@
     array(
       'template-parts/footers/tpl_footer_branding',
       'template-parts/footers/tpl_footer_site'
-    ) 
+    )
   ); ?>
