@@ -3,7 +3,7 @@
  * The template for the front page.
  */
 ?>
-<?php 
+<?php
   Starkers_Utilities::get_template_parts(
     array(
       'template-parts/headers/tpl_header_site',
@@ -23,7 +23,7 @@
     *** Field Group: Home -- Feature Blocks
     *** Queried Field(s): home_feature_story
     **/
-    ?> 
+    ?>
     <?php if( have_rows('home_feature_story') ): ?>
 
       <?php while ( have_rows('home_feature_story') ) : the_row(); ?>
@@ -58,7 +58,7 @@
       <?php while ( have_rows('home_feature_area') ) : the_row(); ?>
 
         <?php if( get_row_layout() == 'feature_block' ) : ?>
-    
+
         <li data-height-watch>
           <article class="post blurb reversed-text">
             <?php $feature_block_image = get_sub_field('home_feature_block_image'); ?>
@@ -86,11 +86,11 @@
         <h5><a href="<?php echo bloginfo('url'); ?>/news/">News</a></h5>
       </div>
 
-      <?php 
+      <?php
 
         $args = array(
         'post_type' => 'post',
-        'posts_per_page' => 9
+        'posts_per_page' => 10
 
       ); ?>
 
@@ -118,7 +118,7 @@
   </div>
 </div>
 
-<?php 
+<?php
   $args = array(
     'post_type' => 'sdsn-publications',
     'posts_per_page' => 3
@@ -179,5 +179,5 @@
     array(
       'template-parts/footers/tpl_footer_branding',
       'template-parts/footers/tpl_footer_site'
-    ) 
+    )
   ); ?>
