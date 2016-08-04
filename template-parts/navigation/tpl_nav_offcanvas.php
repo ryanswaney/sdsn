@@ -1,7 +1,7 @@
 <nav class="tab-bar hide-for-large-up">
   <section class="left-small">
     <a class="left-off-canvas-toggle menu-icon">
-      <span></span> 
+      <span></span>
     </a>
   </section>
 
@@ -15,7 +15,7 @@
       <span></span>
     </a>
   </section>
-  
+
 
 </nav>
 
@@ -47,7 +47,7 @@
   <ul class="off-canvas-list">
     <li><label>Contact the SDSN</label></li>
     <li><a href="mailto:info@unsdsn.org">General Inquiries</a></li>
-    <li><a href="mailto:erin.trowbridge@unsdsn.org">Media Requests</a></li>
+    <li><a href="mailto:michael.shank@unsdsn.org">Media Requests</a></li>
     <li><label>Social Media</label></li>
     <li><a href="https://www.facebook.com/UNSDSN">Like SDSN on Facebook</a></li>
     <li><a href="https://twitter.com/UNSDSN">Follow SDSN on Twitter</a></li>
