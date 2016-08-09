@@ -21,7 +21,7 @@
               <li class="divider"></li>
               <li>
                 <a href="#" data-dropdown="drop-search" class="icon-link">
-                  <svg viewBox="0 261 72 72" style="height: .8em;width: .8em;margin-top: .5em; fill:#fff;">
+                  <svg viewBox="0 261 72 72" style="height: .8em;width: .8em;margin-top: .4em; fill:#fff;">
                      <use xlink:href="#search" />
                    </svg>
                 </a>
