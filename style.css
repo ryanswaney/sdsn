@@ -1,11 +1,11 @@
 /*
 Theme Name: SDSN
 Theme URI: https://github.com/ryanswaney/sdsn
-Description:  
+Description:
 Version: 2.0
 Author: Ryan Swaney
 Author URI: http://smashandgrablabs.com
-Tags:       
+Tags:
 */
 
 /* Base -- mobile and up */
@@ -364,7 +364,7 @@ Tags:
     }
     /* ==============================================
 
-     Site Styles 
+     Site Styles
 
   ============================================== */
     .button.green {
@@ -812,3 +812,13 @@ Tags:
         background: rgba(14, 118, 188, .2)
     }
 }
+
+/* SVG Icons */
+.icon-bar { margin: 1em 0 0 0; padding: 0; }
+.icon{ display: inline-block; margin-right: .75em; fill: #000; width: 1.2em; height: 1.2em; }
+.facebook svg { fill: #3b5998; }
+.mobilize svg { fill: #00bec8; }
+.twitter svg { fill: #1da1f2; }
+.edcast svg { fill: #00a0e4; }
+.rss svg { fill: #FA9B39; }
+.icon a { display: block; }

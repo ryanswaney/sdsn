@@ -158,6 +158,7 @@
         <option value="Kazakhstan">Kazakhstan</option>
         <option value="Kenya">Kenya</option>
         <option value="Kiribati">Kiribati</option>
+        <option value="Kosovo">Kosovo</option>
         <option value="Kuwait">Kuwait</option>
         <option value="Kyrgyzstan">Kyrgyzstan</option>
         <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
@@ -298,7 +299,7 @@
 
   <!-- SDSN Newsletter Group Field -->
   <input hidden checked type="checkbox" value="1" name="group[10505][1]" id="mce-group[10505]-10505-0">
-      
+
   <button type="submit" name="submit" class="button green postfix mchimp-sub">
     Subscribe
     <div class="loadingtrail" style="display:none"></div>

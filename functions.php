@@ -10,23 +10,23 @@
 	 */
 
 	/* ========================================================================================================================
-	
+
 	Required external files
-	
+
 	======================================================================================================================== */
 
 	require_once( 'external/starkers-utilities.php' );
 
 	/* ========================================================================================================================
-	
+
 	Theme specific settings
 
 	Uncomment register_nav_menus to enable a single menu with the title of "Primary Navigation" in your theme
-	
+
 	======================================================================================================================== */
 
 	add_theme_support('post-thumbnails');
-	
+
 	register_nav_menus(array('primary' => 'Primary Navigation'));
 
   register_nav_menus(array('news-cat-menu' => 'News Category Menu'));
@@ -37,9 +37,9 @@
   require_once( 'lib/shortcodes.php' );
 
 	/* ========================================================================================================================
-	
+
 	Actions and Filters
-	
+
 	======================================================================================================================== */
 
 	add_action( 'wp_enqueue_scripts', 'starkers_script_enqueuer' );
@@ -51,11 +51,11 @@
 	require_once( 'lib/pre_get_posts_filters.php' );
 
 	/* ========================================================================================================================
-	
+
 	Custom Post Types - include custom post types and taxonimies here e.g.
 
 	e.g. require_once( 'custom-post-types/your-custom-post-type.php' );
-	
+
 	======================================================================================================================== */
 
   // SDSN Solutions Iniatives
@@ -78,9 +78,9 @@
 
 
 	/* ========================================================================================================================
-	
+
 	Scripts
-	
+
 	======================================================================================================================== */
 
 	/**
@@ -101,8 +101,8 @@
     wp_enqueue_style( 'foundation' );
 
     // Foundation Icons CSS
-		wp_register_style( 'foundation_icons', get_stylesheet_directory_uri().'/assets/fonts/foundation-icons.css', '', '', 'screen' );
-    wp_enqueue_style( 'foundation_icons' );
+		//wp_register_style( 'foundation_icons', get_stylesheet_directory_uri().'/assets/fonts/foundation-icons.css', '', '', 'screen' );
+    //wp_enqueue_style( 'foundation_icons' );
 
     // Open Sans
 		//wp_register_style( 'open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700', '', '', 'screen' );
@@ -147,24 +147,27 @@
     //wp_register_script( 'localScroll_js', get_stylesheet_directory_uri().'/assets/js/jquery.localScroll.min.js', array( 'jquery' ), '', true );
     //wp_enqueue_script( 'localScroll_js' );
 
-	}	
+		remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+		remove_action( 'wp_print_styles', 'print_emoji_styles' ); 
+
+	}
 
 	/* ========================================================================================================================
-	
+
 	Comments
-	
+
 	======================================================================================================================== */
 
 	/**
-	 * Custom callback for outputting comments 
+	 * Custom callback for outputting comments
 	 *
 	 * @return void
 	 * @author Keir Whitaker
 	 */
 	function starkers_comment( $comment, $args, $depth ) {
-		$GLOBALS['comment'] = $comment; 
+		$GLOBALS['comment'] = $comment;
 		?>
-		<?php if ( $comment->comment_approved == '1' ): ?>	
+		<?php if ( $comment->comment_approved == '1' ): ?>
 		<li>
 			<article id="comment-<?php comment_ID() ?>">
 				<?php echo get_avatar( $comment ); ?>

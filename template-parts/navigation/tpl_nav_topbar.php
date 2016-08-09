@@ -7,7 +7,7 @@
           <section class="top-bar-section">
             <!-- Left Nav Section -->
             <?php foundation_top_bar_l(); ?>
-            
+
             <!-- Right Nav Section -->
             <ul class="right">
               <li class="divider"></li>
@@ -20,11 +20,14 @@
               </li>
               <li class="divider"></li>
               <li>
-                <a href="#" data-dropdown="drop-search" class="icon-link"><i class="fi-magnifying-glass"></i></a>
+                <a href="#" data-dropdown="drop-search" class="icon-link">
+                  <svg viewBox="0 261 72 72" style="height: .8em;width: .8em;margin-top: .5em; fill:#fff;">
+                     <use xlink:href="#search" />
+                   </svg>
+                </a>
               </li>
               <li class="divider"></li>
             </ul>
-            
           </section>
         </nav>
 
@@ -48,7 +51,7 @@
           <div class="row">
             <div class="large-12 columns">
               <h6 class="reversed-text border-top">Questions or Comments? </h6>
-              <p class="reversed-text" style="font-size: 80%;">We welcome your questions or comments on our work. Please get in touch with us by writing to <a href="mailto:info@unsdsn.org">info@unsdsn.org</a>.</p> 
+              <p class="reversed-text" style="font-size: 80%;">We welcome your questions or comments on our work. Please get in touch with us by writing to <a href="mailto:info@unsdsn.org">info@unsdsn.org</a>.</p>
             </div>
           </div>
         </div>

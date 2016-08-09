@@ -4,25 +4,74 @@
           <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/sdsn_logo_fc.png" alt="Sustainable Development Solutions Network"></a>
         </div>
         <div class="small-6 large-4 columns hide-for-small">
-          <div class="button-bar social-media-bar">
-            <ul class="button-group radius right">
-              <li class="small button icon-button green">
-                <a href="https://www.facebook.com/UNSDSN" title="Follow SDSN on Facebook"><i class="fi-social-facebook"></i></a>
-              </li>
-              <li class="small button icon-button green">
-                <a href="https://twitter.com/UNSDSN" title="Follow SDSN on Twitter"><i class="fi-social-twitter"></i></a>
-              </li>
-              <li class="small button green" style="padding: 0;">
-                <a href="http://sdsnedu.org/" style="display: block; padding: .85rem 1rem">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ed_icon_.png" style="max-width: 25px;">
-                </a>
-              </li>
-              <li class="small button icon-button green">
-                <a href="http://unsdsn.org/feed/"><i class="fi-rss"></i></a>
-              </li>
-              
-            </ul>
-          </div>
+
+          <svg height="0" width="0" >
+            <defs>
+              <g id="edcast">
+                <path d="M64.87,357v-1.43q0-5.47,0-10.95c0-.75.21-1,1-1H71c.76,0,1,.21,1,1q0,18.71,0,37.41c0,.73-.13.86-.86.86H66.32c-.86,0-1.08-.22-1.08-1.07,0-1,0-2.08,0-3.09a.59.59,0,0,0-.1.12,10,10,0,0,1-8.45,4.69,11.88,11.88,0,0,1-7.88-2.32,12.67,12.67,0,0,1-4.58-6.85A19.53,19.53,0,0,1,44.82,361a11.89,11.89,0,0,1,9.34-7.51,12.33,12.33,0,0,1,7.78,1,7.2,7.2,0,0,1,2.77,2.33S64.8,356.94,64.87,357Zm.29,11.51c-.12-.92-.18-1.85-.37-2.76a8.13,8.13,0,0,0-2.36-4.47,6.7,6.7,0,0,0-10.15,1.2,9.65,9.65,0,0,0-1.59,4.78,11.87,11.87,0,0,0,.93,6.11,6.79,6.79,0,0,0,12.17.7A11.8,11.8,0,0,0,65.16,368.53Z" transform="translate(0.04)"/>
+                <path d="M20.24,369.68a8.14,8.14,0,0,0,6,7.41,10.51,10.51,0,0,0,7.34-.62,28.77,28.77,0,0,0,3-1.66c.58-.34.78-.33,1.1.27l2,3.66a.84.84,0,0,1-.28,1.28,18.13,18.13,0,0,1-9.3,3.51A16.65,16.65,0,0,1,21.17,382a14.05,14.05,0,0,1-8-10.31A16.08,16.08,0,0,1,14.54,361a13.42,13.42,0,0,1,10.33-7.49,14.39,14.39,0,0,1,7.85.7,11.65,11.65,0,0,1,7.06,8.18,17.36,17.36,0,0,1,.49,6.48.78.78,0,0,1-.73.76,3.39,3.39,0,0,1-.45,0H20.24Zm12.89-4.8c0-.34-.05-.64-.09-.94a5.46,5.46,0,0,0-3.15-4.55,6.74,6.74,0,0,0-8.5,2.88,7.9,7.9,0,0,0-.89,2.61Z" transform="translate(0.04)"/>
+                <path d="M27.26,335.47c0,.52,0,1,0,1.56s-.28.86-.91.92c-1.17.1-2.35.17-3.51.35A27.7,27.7,0,0,0,10,343.93a29.86,29.86,0,0,0-5.79,6,.86.86,0,0,1-1.39.24L.49,348.58a.84.84,0,0,1-.25-1.36,34.19,34.19,0,0,1,11.9-10.47,32.06,32.06,0,0,1,11.06-3.5c1-.13,2-.18,3-.24.8,0,1.07.24,1.07,1Q27.26,334.75,27.26,335.47Z" transform="translate(0.04)"/>
+                <path d="M27.26,345.41q0,.74,0,1.48c0,.7-.22.94-.91,1a19,19,0,0,0-6.68,1.6,19.75,19.75,0,0,0-7.46,5.81c-.47.59-.8.65-1.43.22l-2.35-1.58a.8.8,0,0,1-.23-1.27,23.76,23.76,0,0,1,14.17-9.19,35,35,0,0,1,3.95-.51c.64-.07.94.26.94.9S27.26,344.89,27.26,345.41Z" transform="translate(0.04)"/>
+              </g>
+              <g id="search">
+                <path d="M63.9,269.08h0a27.7,27.7,0,0,0-43.17,34.14L2,321.36a6.69,6.69,0,0,0-.18,9.37,6.46,6.46,0,0,0,9.24.21l19-18.49A27.71,27.71,0,0,0,63.9,269.08ZM56,300.35A16.52,16.52,0,1,1,56,277,16.44,16.44,0,0,1,56,300.35Z" transform="translate(0.04)"/>
+              </g>
+              <g id="mobilize">
+                <path d="M64.75,259.81a7.26,7.26,0,0,1-7.3-7.22v-25a7.07,7.07,0,0,0-14.14,0v25a7.3,7.3,0,0,1-14.59,0v-25a7.07,7.07,0,0,0-14.14,0v25a7.26,7.26,0,0,1-7.3,7.22A7.26,7.26,0,0,1,0,252.59v-28a7.07,7.07,0,0,1,.05-.83C.59,214.45,10,207,21.66,207A24.57,24.57,0,0,1,36,211.46,24.57,24.57,0,0,1,50.39,207C62,207,71.46,214.45,72,223.78a7.07,7.07,0,0,1,.05.83v28A7.26,7.26,0,0,1,64.75,259.81Z" transform="translate(0.04)"/>
+              </g>
+              <g id="rss">
+                <circle cx="9.92" cy="197.13" r="9.87"/>
+                <path d="M0,159.27v14A33.74,33.74,0,0,1,33.74,207h14A47.73,47.73,0,0,0,0,159.27Z" transform="translate(0.04)"/>
+                <path d="M0,135v14.4A57.6,57.6,0,0,1,57.6,207H72A72,72,0,0,0,0,135Z" transform="translate(0.04)"/>
+              </g>
+              <g id="twitter">
+                <path d="M72,78.93a29.55,29.55,0,0,1-8.49,2.33A14.83,14.83,0,0,0,70,73.08a29.55,29.55,0,0,1-9.39,3.59A14.79,14.79,0,0,0,35.44,90.15,42,42,0,0,1,5,74.71,14.8,14.8,0,0,0,9.55,94.44a14.7,14.7,0,0,1-6.69-1.85c0,.06,0,.12,0,.19a14.79,14.79,0,0,0,11.86,14.49,14.88,14.88,0,0,1-6.67.25,14.8,14.8,0,0,0,13.81,10.26,29.67,29.67,0,0,1-18.36,6.33A30.24,30.24,0,0,1,0,123.9a41.85,41.85,0,0,0,22.66,6.64c27.18,0,42-22.52,42-42.05q0-1,0-1.91A30.1,30.1,0,0,0,72,78.93" transform="translate(0.04)"/>
+              </g>
+              <g id="facebook">
+                <path d="M67.58,0H3.95A4,4,0,0,0,0,3.95V67.58a4,4,0,0,0,3.95,3.95H38.2V43.83H28.88V33H38.2v-8c0-9.24,5.64-14.27,13.88-14.27a76.41,76.41,0,0,1,8.33.43v9.65H54.7c-4.48,0-5.35,2.13-5.35,5.26V33H60L58.65,43.83h-9.3v27.7H67.58a4,4,0,0,0,3.95-3.95V3.95A4,4,0,0,0,67.58,0Z" transform="translate(0.04)"/>
+              </g>
+            </defs>
+          </svg>
+
+        <ul class="icon-bar">
+          <li class="icon twitter">
+            <a href="https://twitter.com/UNSDSN" title="Permalink: SDSN on Twitter">
+              <svg viewBox="0 72 72 72">
+               <use xlink:href="#twitter" />
+              </svg>
+            </a>
+          </li>
+          <li class="icon facebook">
+            <a href="https://www.facebook.com/UNSDSN" title="Permalink: SDSN on Facebook">
+              <svg viewBox="0 0 72 72">
+                 <use xlink:href="#facebook" />
+               </svg>
+             </a>
+          </li>
+          <li class="icon mobilize">
+            <a href="https://sdsn.mobilize.io/registrations/groups/3705" title="Permalink: SDSN on Mobilize">
+              <svg viewBox="0 200 72 72">
+                 <use xlink:href="#mobilize" />
+               </svg>
+             </a>
+          </li>
+          <li class="icon edcast">
+            <a href="http://sdsnedu.org/" title="Permalink: SDSN on EdCast">
+              <svg viewBox="0 322 72 72">
+                 <use xlink:href="#edcast" />
+               </svg>
+             </a>
+          </li>
+          <li class="icon rss">
+            <a href="http://unsdsn.org/feed/" title="Permalink: SDSN's RSS Feed">
+              <svg viewBox="0 136 72 72">
+                 <use xlink:href="#rss" />
+               </svg>
+             </a>
+          </li>
+        </ul>
+
+
         </div>
       </div>
     </header>
