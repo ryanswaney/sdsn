@@ -50,6 +50,10 @@
 
 	require_once( 'lib/pre_get_posts_filters.php' );
 
+	require_once( 'lib/twitter_cards.php' );
+
+	add_action('wp_head', 'add_twitter_cards');
+
 	/* ========================================================================================================================
 
 	Custom Post Types - include custom post types and taxonimies here e.g.
@@ -100,14 +104,6 @@
 		wp_register_style( 'foundation', get_stylesheet_directory_uri().'/assets/css/foundation.min.css', '', '', 'screen' );
     wp_enqueue_style( 'foundation' );
 
-    // Foundation Icons CSS
-		//wp_register_style( 'foundation_icons', get_stylesheet_directory_uri().'/assets/fonts/foundation-icons.css', '', '', 'screen' );
-    //wp_enqueue_style( 'foundation_icons' );
-
-    // Open Sans
-		//wp_register_style( 'open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700', '', '', 'screen' );
-    //wp_enqueue_style( 'open-sans' );
-
     // Theme CSS
 		wp_register_style( 'screen', get_stylesheet_directory_uri().'/style.css', '', '', 'screen' );
     wp_enqueue_style( 'screen' );
@@ -120,35 +116,16 @@
     wp_register_script( 'modernizr', get_stylesheet_directory_uri().'/assets/js/vendor/modernizr.js', array( 'jquery' ), '', false );
 		wp_enqueue_script( 'modernizr' );
 
-    /*
-		// Respond.js -- https://github.com/scottjehl/Respond/
-    wp_register_script( 'respond', get_stylesheet_directory_uri().'/assets/js/respond.min.js', array( 'jquery' ), '', false );
-		wp_enqueue_script( 'respond' );
-
-		// html5shiv -- https://github.com/aFarkas/html5shiv
-		wp_register_script( 'html5shiv', get_stylesheet_directory_uri().'/assets/js/html5shiv.js', array( 'jquery' ), '', false );
-		wp_enqueue_script( 'html5shiv' );
-    */
-
     // Foundation JS
     wp_register_script( 'foundation_js', get_stylesheet_directory_uri().'/assets/js/foundation.min.js', array( 'jquery' ), '', true );
 		wp_enqueue_script( 'foundation_js' );
-
 
 		// SDSN JS
     wp_register_script( 'sdsn_js', get_stylesheet_directory_uri().'/assets/js/site.js', array( 'jquery' ), '', true );
 		wp_enqueue_script( 'sdsn_js' );
 
-    // ScrollTo JS
-    //wp_register_script( 'scrollTo_js', get_stylesheet_directory_uri().'/assets/js/jquery.scrollTo.min.js', array( 'jquery' ), '', true );
-    //wp_enqueue_script( 'scrollTo_js' );
-
-    // localScroll JS
-    //wp_register_script( 'localScroll_js', get_stylesheet_directory_uri().'/assets/js/jquery.localScroll.min.js', array( 'jquery' ), '', true );
-    //wp_enqueue_script( 'localScroll_js' );
-
 		remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-		remove_action( 'wp_print_styles', 'print_emoji_styles' ); 
+		remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 	}
 
