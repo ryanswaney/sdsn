@@ -5,7 +5,7 @@
  *
  */
 ?>
-<?php 
+<?php
   Starkers_Utilities::get_template_parts(
     array(
       'template-parts/headers/tpl_header_site',
@@ -109,7 +109,7 @@
 
       <?php if( !empty($thematic_group_publication_category) ) : ?>
 
-        <?php 
+        <?php
 
           $termChildren = get_term_children($thematic_group_publication_category->term_id, 'location');
 
@@ -142,8 +142,8 @@
 
           <?php echo '<!--'. count( $related_tg_pubs ) . '-->'; ?>
 
-          <a id="resources"></a>
-          <h6 class="border-top">Thematic Network Resources</h6>
+          <a id="publications"></a>
+          <h6 class="border-top">Related Publications</h6>
 
           <ul class="no-bullet margin-bottom-2">
 
@@ -233,12 +233,12 @@
         ?>
         <?php if( get_field('thematic_group_external_links') ): ?>
 
-        <h6 class="border-top">External Resources</h6>
+        <h6 class="border-top">Related Resources</h6>
 
         <ul class="no-bullet margin-bottom-2">
           <?php while( has_sub_field('thematic_group_external_links') ) : ?>
             <li class="margin-bottom-1">
-              <a href="<?php the_sub_field('thematic_group_external_link_title'); ?>"><?php the_sub_field('thematic_group_external_link_url'); ?></a>
+              <a href="<?php the_sub_field('thematic_group_external_link_url'); ?>"><?php the_sub_field('thematic_group_external_link_title'); ?></a>
             </li>
           <?php endwhile; ?>
         </ul>
@@ -262,7 +262,7 @@
         <?php if( !empty( $related_tg_news ) ) : ?>
 
           <a id="news"></a>
-          <h6 class="border-top">News</h6>
+          <h6 class="border-top">Related News</h6>
 
           <ul class="no-bullet">
 
@@ -340,7 +340,7 @@
 
     </div>
 
-  </div>	
+  </div>
 
 <?php endwhile; ?>
 
@@ -350,5 +350,5 @@
     array(
       'template-parts/footers/tpl_footer_branding',
       'template-parts/footers/tpl_footer_site'
-    ) 
+    )
   ); ?>

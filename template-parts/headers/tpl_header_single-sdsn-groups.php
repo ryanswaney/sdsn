@@ -7,12 +7,12 @@
       <ul class="inline-list tg-nav">
         <li class="reversed-text">Navigate to:</li>
         <li class="reversed-text"><a href="#overview">Overview</a></li>
-        <li class="reversed-text"><a href="#resources">Resources</a></li>
+        <li class="reversed-text"><a href="#publications">Publications</a></li>
         <li class="reversed-text"><a href="#news">News</a></li>
         <li class="reversed-text"><a href="#members">Members</a></li>
         <li class="reversed-text"><a href="#other-tgs">Other Thematic Networks</a></li>
       </ul>
-      
+
 		</div>
 	</div>
 </div>
