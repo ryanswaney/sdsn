@@ -4,7 +4,7 @@
  *
  */
 ?>
-<?php 
+<?php
   Starkers_Utilities::get_template_parts(
     array(
       'template-parts/headers/tpl_header_site',
@@ -21,9 +21,9 @@
   <div class="row">
     <div class="small-12 large-10 columns">
 
-        
+
         <h1 class="page-title"><?php the_title(); ?></h1>
-        <span style="font-size: 105%;">Online Education For Sustainable Development</span>
+        <span style="font-size: 105%;">Educational Resources from the World's Leading Experts on Sustainable Development</span>
 
     </div>
   </div>
@@ -32,7 +32,7 @@
   <div class="row">
 
     <div class="small-12 large-7 columns">
-      
+
       <?php the_content(); ?>
 
     </div>
@@ -71,5 +71,5 @@
     array(
       'template-parts/footers/tpl_footer_branding',
       'template-parts/footers/tpl_footer_site'
-    ) 
+    )
   ); ?>
