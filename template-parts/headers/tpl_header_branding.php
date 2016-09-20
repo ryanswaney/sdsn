@@ -56,7 +56,7 @@
              </a>
           </li>
           <li class="icon edcast">
-            <a href="http://sdsnedu.org/" title="Permalink: SDSN on EdCast">
+            <a href="http://sdgacademy.org/" title="Permalink: SDSN on EdCast">
               <svg viewBox="0 322 72 72">
                  <use xlink:href="#edcast" />
                </svg>
