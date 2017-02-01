@@ -127,6 +127,13 @@
 		remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 		remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
+		// Load Custom JS
+		if ( is_page_template('page-events.php') ) {
+        wp_enqueue_script('handlebars-js',get_stylesheet_directory_uri().'/assets/js/handlebars.min-latest.js', array('jquery'),'',true);
+				wp_enqueue_script('sheetrock-js',get_stylesheet_directory_uri().'/assets/js/sheetrock.min.js', array('jquery'),'',true);
+				wp_enqueue_script('sdsn-events-js',get_stylesheet_directory_uri().'/assets/js/events.js', array('jquery'),'',true);
+    }
+
 	}
 
 	/* ========================================================================================================================

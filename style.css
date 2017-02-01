@@ -401,6 +401,24 @@ Tags:
     .button.icon-button a > span {
         display: none;
     }
+    .event-list {
+      list-style: none;
+      margin-left: 0;
+    }
+    .event {
+      border-left: 4px solid #c5e8ff;
+      margin-bottom: 2em;
+      padding-left: 1em;
+      padding: 1.333em;
+      background: #f4fbff;
+
+    }
+    .event-desc {
+      margin-top: 1em;
+    }
+    .event-title a {
+      text-decoration: underline;
+    }
     .feature {
         background: #003f72;
     }
