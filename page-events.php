@@ -62,17 +62,18 @@
                   {{cells.Location}}
                 </div>
               {{/if}}
-              {{#if cells.Organizers}}
-                <div class="event-orgs">
-                  Organized by: {{ cells.Organizers}}
-                </div>
-              {{/if}}
               {{#if cells.Description}}
                 <div class="event-desc">
                   <p>
                     <strong>About the event:</strong><br/>
                     {{cells.Description}}
                   </p>
+                  {{#if cells.Organizers}}
+                    <p class="event-orgs">
+                      <strong>Organized by:</strong><br/>
+                      {{ cells.Organizers}}
+                    </p>
+                  {{/if}}
                 </div>
               {{/if}}
           </li>
