@@ -39,7 +39,7 @@
 
   <div>
     <label class="reversed-text">Country
-      <select name="MMERGE4" class="" id="mce-MMERGE4">
+      <select name="MMERGE4" class="" id="mce-MMERGE4" required>
         <option value="" selected></option>
         <option value="United States">United States</option>
         <option value="Aaland Islands">Aaland Islands</option>
@@ -291,6 +291,7 @@
         <option value="Zambia">Zambia</option>
         <option value="Zimbabwe">Zimbabwe</option>
       </select>
+      <small class="error">Country is required.</small>
      </label> <!-- /country-field -->
 
     </div>

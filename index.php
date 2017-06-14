@@ -3,7 +3,7 @@
  * The main template file
  */
 ?>
-<?php 
+<?php
   Starkers_Utilities::get_template_parts(
     array(
       'template-parts/headers/tpl_header_site',
@@ -39,7 +39,7 @@
 
     <?php $args = array(
       'posts_per_page'   => 4,
-      'offset'           => 3,
+      'offset'           => 7,
       'post_type'        => 'post' );
     ?>
 
@@ -91,5 +91,5 @@
     array(
       'template-parts/footers/tpl_footer_branding',
       'template-parts/footers/tpl_footer_site'
-    ) 
+    )
   ); ?>
