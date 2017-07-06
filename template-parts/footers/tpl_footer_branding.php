@@ -29,10 +29,8 @@
                   <li class="reversed-text">
                     <strong style="font-size: 0.8125rem;">Paris</strong>
                     <address style="font-style: normal; font-size: 0.8125rem;">
-                      Reid Hall<br />
-                      4 Rue de Chevreuse<br/>
-                      75006 Paris<br/>
-                      France<br />
+                      19, rue Bergère<br/>
+                      75009. Paris. France<br/>
                       +33 (1) 84 86 06 60
                     </address>
                   </li>
@@ -40,12 +38,20 @@
                     <strong style="font-size: 0.8125rem;">New York</strong>
                     <address style="font-style: normal; font-size: 0.8125rem;">
                       475 Riverside Dr.<br/>
-                      Suite 825<br/>
-                      New York, NY 10115<br/>
-                      USA<br />
+                      Suite 530<br/>
+                      New York, NY 10115 USA<br />
                       +1 (212) 870 2799
                     </address>
                   </li>
+                  <li class="reversed-text">
+                    <strong style="font-size: 0.8125rem">India</strong>
+                    <address style="font-style: normal; font-size: 0.8125rem;">
+                      Indian Institute for Human Settlements<br/>
+                      405, Surya Kiran building<br/>
+                      19, Kasturba Gandhi Marg<br/>
+                      New Delhi 110001<br/>
+                      +91-11-46882200
+                    </address>
                 </ul>
 
               </div>
