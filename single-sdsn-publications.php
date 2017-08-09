@@ -4,7 +4,7 @@
  *
  */
 ?>
-<?php 
+<?php
   Starkers_Utilities::get_template_parts(
     array(
       'template-parts/headers/tpl_header_site',
@@ -28,14 +28,14 @@
 
     <?php if ( has_post_thumbnail() ) : ?>
       <?php the_post_thumbnail( 'thumb', array( 'class' => 'feature-photo thmb right margin-left-2' ) ); ?>
-    <?php endif; ?> 
+    <?php endif; ?>
 
     <?php
     /** Get ACF Fields
     *** Field Group: CPT -- Publications
     *** Queried Field(s): sdsn_publication_flex_file
     **/
-    ?> 
+    ?>
     <?php if( have_rows('sdsn_publication_flex_file') ): ?>
 
       <?php // Find out how many files we have available for download ?>
@@ -48,7 +48,7 @@
         <ul id="publication-download" data-dropdown-content class="medium f-dropdown">
         <?php while ( have_rows('sdsn_publication_flex_file') ) : the_row(); ?>
 
-          <li><a href="<?php the_sub_field('sdsn_publication_flex_file_attachment'); ?>"><?php the_sub_field('sdsn_publication_flex_file_title'); ?></a></li>
+          <li><a href="<?php the_sub_field('sdsn_publication_flex_file_attachment'); ?>" onclick="trackOutboundLink('<?php the_sub_field('sdsn_publication_flex_file_attachment'); ?>'); return false;"><?php the_sub_field('sdsn_publication_flex_file_title'); ?></a></li>
 
         <?php endwhile; ?>
         </ul>
@@ -59,7 +59,7 @@
 
         <?php while ( have_rows('sdsn_publication_flex_file') ) : the_row(); ?>
 
-        <a href="<?php the_sub_field('sdsn_publication_flex_file_attachment'); ?>" class="button tiny radius">Download Publication</a>
+        <a href="<?php the_sub_field('sdsn_publication_flex_file_attachment'); ?>" onclick="trackOutboundLink('<?php the_sub_field('sdsn_publication_flex_file_attachment'); ?>'); return false;" class="button tiny radius">Download Publication</a>
 
       <?php endwhile; ?>
 
@@ -75,7 +75,7 @@
     *** Field Group: CPT -- Publications
     *** Queried Field(s): sdsn_publication_supplemental_flex_file
     **/
-    ?> 
+    ?>
     <?php if( have_rows('sdsn_publication_supplemental_flex_file') ): ?>
 
       <?php // Find out how many files we have available for download ?>
@@ -89,7 +89,7 @@
         <ul id="publication-sup-download" data-dropdown-content class="medium f-dropdown">
         <?php while ( have_rows('sdsn_publication_supplemental_flex_file') ) : the_row(); ?>
 
-          <li><a href="<?php the_sub_field('sdsn_publication_supplemental_flex_file_attachment'); ?>"><?php the_sub_field('sdsn_publication_supplemental_flex_file_title'); ?></a></li>
+          <li><a href="<?php the_sub_field('sdsn_publication_supplemental_flex_file_attachment'); ?>" onclick="trackOutboundLink('<?php the_sub_field('sdsn_publication_supplemental_flex_file_attachment'); ?>'); return false;"><?php the_sub_field('sdsn_publication_supplemental_flex_file_title'); ?></a></li>
 
         <?php endwhile; ?>
         </ul>
@@ -100,7 +100,7 @@
 
         <?php while ( have_rows('sdsn_publication_supplemental_flex_file') ) : the_row(); ?>
 
-        <a href="<?php the_sub_field('sdsn_publication_supplemental_flex_file_attachment'); ?>" class="button tiny radius">Download <?php the_sub_field('sdsn_publication_supplemental_flex_file_title'); ?></a>
+        <a href="<?php the_sub_field('sdsn_publication_supplemental_flex_file_attachment'); ?>" onclick="trackOutboundLink('<?php the_sub_field('sdsn_publication_supplemental_flex_file_attachment'); ?>'); return false;" class="button tiny radius">Download <?php the_sub_field('sdsn_publication_supplemental_flex_file_title'); ?></a>
 
       <?php endwhile; ?>
 
@@ -111,7 +111,7 @@
     <?php endif; ?>
 
     <?php the_content(); ?>
-			
+
 
     </div>
 
@@ -124,5 +124,5 @@
     array(
       'template-parts/footers/tpl_footer_branding',
       'template-parts/footers/tpl_footer_site'
-    ) 
+    )
   ); ?>

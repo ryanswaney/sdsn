@@ -6,7 +6,7 @@
  *
  */
 ?>
-<?php 
+<?php
   Starkers_Utilities::get_template_parts(
     array(
       'template-parts/headers/tpl_header_site',
@@ -43,7 +43,7 @@
             'operator' => 'IN'
           )
         )
-        
+
     ); ?>
 
     <?php $pubs_by_term = get_posts( $args ); ?>
@@ -58,7 +58,7 @@
           <header>
           <?php if ( has_post_thumbnail() ) : ?>
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_post_thumbnail( 'medium', array( 'class' => 'feature-photo thmb right' ) ); ?></a>
-          <?php endif; ?> 
+          <?php endif; ?>
             <div class="post-meta">Feature</div>
             <h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_title(); ?></a></h1>
           </header>
@@ -70,7 +70,7 @@
     *** Field Group: CPT -- Publications
     *** Queried Field(s): sdsn_publication_flex_file
     **/
-    ?> 
+    ?>
     <?php if( have_rows('sdsn_publication_flex_file') ): ?>
 
       <?php // Find out how many files we have available for download ?>
@@ -83,7 +83,7 @@
         <ul id="publication-download" data-dropdown-content class="medium f-dropdown">
         <?php while ( have_rows('sdsn_publication_flex_file') ) : the_row(); ?>
 
-          <li><a href="<?php the_sub_field('sdsn_publication_flex_file_attachment'); ?>"><?php the_sub_field('sdsn_publication_flex_file_title'); ?></a></li>
+          <li><a href="<?php the_sub_field('sdsn_publication_flex_file_attachment'); ?>" onclick="trackOutboundLink('<?php the_sub_field('sdsn_publication_flex_file_attachment'); ?>'); return false;"><?php the_sub_field('sdsn_publication_flex_file_title'); ?></a></li>
 
         <?php endwhile; ?>
         </ul>
@@ -94,7 +94,7 @@
 
         <?php while ( have_rows('sdsn_publication_flex_file') ) : the_row(); ?>
 
-        <a href="<?php the_sub_field('sdsn_publication_flex_file_attachment'); ?>" class="button tiny radius">Download Publication</a>
+        <a href="<?php the_sub_field('sdsn_publication_flex_file_attachment'); ?>" onclick="trackOutboundLink('<?php the_sub_field('sdsn_publication_flex_file_attachment'); ?>'); return false;" class="button tiny radius">Download Publication</a>
 
       <?php endwhile; ?>
 
@@ -110,7 +110,7 @@
     *** Field Group: CPT -- Publications
     *** Queried Field(s): sdsn_publication_supplemental_flex_file
     **/
-    ?> 
+    ?>
     <?php if( have_rows('sdsn_publication_supplemental_flex_file') ): ?>
 
       <?php // Find out how many files we have available for download ?>
@@ -124,7 +124,7 @@
         <ul id="publication-sup-download" data-dropdown-content class="medium f-dropdown">
         <?php while ( have_rows('sdsn_publication_supplemental_flex_file') ) : the_row(); ?>
 
-          <li><a href="<?php the_sub_field('sdsn_publication_supplemental_flex_file_attachment'); ?>"><?php the_sub_field('sdsn_publication_supplemental_flex_file_title'); ?></a></li>
+          <li><a href="<?php the_sub_field('sdsn_publication_supplemental_flex_file_attachment'); ?>" onclick="trackOutboundLink('<?php the_sub_field('sdsn_publication_supplemental_flex_file_attachment'); ?>'); return false;"><?php the_sub_field('sdsn_publication_supplemental_flex_file_title'); ?></a></li>
 
         <?php endwhile; ?>
         </ul>
@@ -135,7 +135,7 @@
 
         <?php while ( have_rows('sdsn_publication_supplemental_flex_file') ) : the_row(); ?>
 
-        <a href="<?php the_sub_field('sdsn_publication_supplemental_flex_file_attachment'); ?>" class="button tiny radius">Download <?php the_sub_field('sdsn_publication_supplemental_flex_file_title'); ?></a>
+        <a href="<?php the_sub_field('sdsn_publication_supplemental_flex_file_attachment'); ?>" onclick="trackOutboundLink('<?php the_sub_field('sdsn_publication_supplemental_flex_file_attachment'); ?>'); return false;" class="button tiny radius">Download <?php the_sub_field('sdsn_publication_supplemental_flex_file_title'); ?></a>
 
       <?php endwhile; ?>
 
@@ -184,7 +184,7 @@
 
           )
         )
-        
+
     ); ?>
 
     <?php $pubs_by_term = get_posts( $args ); ?>
@@ -199,7 +199,7 @@
           <header>
           <?php if ( has_post_thumbnail() ) : ?>
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_post_thumbnail( 'thumb', array( 'class' => 'feature-photo thmb right' ) ); ?></a>
-          <?php endif; ?> 
+          <?php endif; ?>
             <div class="post-meta"><time datetime="<?php the_time('Y-n-D'); ?>" pubdate><?php the_time('M j, Y'); ?></time></div>
             <h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_title(); ?></a></h1>
           </header>
@@ -233,9 +233,9 @@
             'field' => 'slug',
             'terms' => array( 'thematic-network-reports' ),
             'include_children' => true,
-            'operator' => 'IN' ) 
+            'operator' => 'IN' )
           )
-        
+
     ); ?>
 
     <?php $pubs_by_term = get_posts( $args ); ?>
@@ -250,7 +250,7 @@
           <header>
           <?php if ( has_post_thumbnail() ) : ?>
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_post_thumbnail( 'thumb', array( 'class' => 'feature-photo thmb right' ) ); ?></a>
-          <?php endif; ?> 
+          <?php endif; ?>
             <div class="post-meta"><time datetime="<?php the_time('Y-n-D'); ?>" pubdate><?php the_time('M j, Y'); ?></time></div>
             <h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_title(); ?></a></h1>
           </header>
@@ -292,7 +292,7 @@
             'operator' => 'NOT IN'
           )
         )
-        
+
     ); ?>
 
     <?php $pubs_by_term = get_posts( $args ); ?>
@@ -307,7 +307,7 @@
           <header>
           <?php if ( has_post_thumbnail() ) : ?>
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_post_thumbnail( 'thumb', array( 'class' => 'feature-photo right' ) ); ?></a>
-          <?php endif; ?> 
+          <?php endif; ?>
             <div class="post-meta"><time datetime="<?php the_time('Y-n-D'); ?>" pubdate><?php the_time('M j, Y'); ?></time></div>
             <h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_title(); ?></a></h1>
           </header>
@@ -335,7 +335,7 @@
             'operator' => 'IN'
           )
         )
-        
+
     ); ?>
 
     <?php $pubs_by_term = get_posts( $args ); ?>
@@ -350,7 +350,7 @@
           <header>
           <?php if ( has_post_thumbnail() ) : ?>
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_post_thumbnail( 'thumb', array( 'class' => 'feature-photo right' ) ); ?></a>
-          <?php endif; ?> 
+          <?php endif; ?>
             <div class="post-meta"><time datetime="<?php the_time('Y-n-D'); ?>" pubdate><?php the_time('M j, Y'); ?></time></div>
             <h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_title(); ?></a></h1>
           </header>
@@ -379,7 +379,7 @@
             'operator' => 'IN'
           )
         )
-        
+
     ); ?>
 
     <?php $pubs_by_term = get_posts( $args ); ?>
@@ -396,7 +396,7 @@
           <header>
           <?php if ( has_post_thumbnail() ) : ?>
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_post_thumbnail( 'thumb', array( 'class' => 'feature-photo right' ) ); ?></a>
-          <?php endif; ?> 
+          <?php endif; ?>
             <div class="post-meta"><time datetime="<?php the_time('Y-n-D'); ?>" pubdate><?php the_time('M j, Y'); ?></time></div>
             <h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute( array( 'before' => 'Permalink to: ', 'after' => '' ) ); ?>"><?php the_title(); ?></a></h1>
           </header>
@@ -420,5 +420,5 @@
     array(
       'template-parts/footers/tpl_footer_branding',
       'template-parts/footers/tpl_footer_site'
-    ) 
+    )
   ); ?>
