@@ -47,7 +47,7 @@
   <ul class="off-canvas-list">
     <li><label>Contact the SDSN</label></li>
     <li><a href="mailto:info@unsdsn.org">General Inquiries</a></li>
-    <li><a href="mailto:michael.shank@unsdsn.org">Media Requests</a></li>
+    <li><a href="mailto:info@unsdsn.org">Media Requests</a></li>
     <li><label>Social Media</label></li>
     <li><a href="https://www.facebook.com/UNSDSN">Like SDSN on Facebook</a></li>
     <li><a href="https://twitter.com/UNSDSN">Follow SDSN on Twitter</a></li>
