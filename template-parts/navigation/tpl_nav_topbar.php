@@ -12,7 +12,7 @@
             <ul class="right">
               <li class="divider"></li>
               <li>
-                <a href="#" data-dropdown="drop-newsletter">Newsletter</a>
+                <a href="http://eepurl.com/1KMOv">Newsletter</a>
               </li>
               <li class="divider"></li>
               <li>
@@ -33,27 +33,6 @@
 
         <div id="drop-search" class="medium content f-dropdown" data-dropdown-content>
           <?php echo get_search_form(); ?>
-        </div>
-
-        <div id="drop-newsletter" class="medium content f-dropdown" data-dropdown-content>
-          <div class="row">
-            <div class="large-12 columns">
-              <h6 class="reversed-text">Sign up for monthly updates from the SDSN.</h6>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="large-12 columns">
-                <?php Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-mc-basic-ajax' ) ); ?>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="large-12 columns">
-              <h6 class="reversed-text border-top">Questions or Comments? </h6>
-              <p class="reversed-text" style="font-size: 80%;">We welcome your questions or comments on our work. Please get in touch with us by writing to <a href="mailto:info@unsdsn.org">info@unsdsn.org</a>.</p>
-            </div>
-          </div>
         </div>
 
         <!-- Google translate -->

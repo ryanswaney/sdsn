@@ -35,12 +35,7 @@
   <div class="row">
     <div class="large-12 columns">
       <h6 class="reversed-text margin-top-2">Sign up for monthly updates from the SDSN.</h6>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="small-12 columns">
-      <?php Starkers_Utilities::get_template_parts( array( 'template-parts/content/form-mc-mobile-ajax', ) ); ?>
+      <a href="http://eepurl.com/1KMOv" class="button green postfix mchimp-sub">Sign Up</a>
     </div>
   </div>
 
