@@ -14,6 +14,7 @@
                   <dt style="font-size: 0.8125rem;">Email</dt>
                   <dd style="font-style: normal; font-size: 0.8125rem;"><a href="mailto:info@unsdsn.org">General Inquiries</a></dd>
                   <dd style="font-style: normal; font-size: 0.8125rem;"><a href="mailto:info@unsdsn.org">Media Requests</a></dd>
+                  <dd style="font-style: normal; font-size: 0.8125rem;"><a href="mailto:privacy@unsdsn.org">Privacy Inquiries</a></dd>
                 </dl>
 
                 <dl class="reversed-text">
