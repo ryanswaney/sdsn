@@ -47,7 +47,6 @@
                   <li class="reversed-text">
                     <strong style="font-size: 0.8125rem">India</strong>
                     <address style="font-style: normal; font-size: 0.8125rem;">
-                      Indian Institute for Human Settlements<br/>
                       405, Surya Kiran building<br/>
                       19, Kasturba Gandhi Marg<br/>
                       New Delhi 110001<br/>
