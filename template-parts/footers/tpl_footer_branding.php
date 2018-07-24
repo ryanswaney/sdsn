@@ -45,11 +45,11 @@
                     </address>
                   </li>
                   <li class="reversed-text">
-                    <strong style="font-size: 0.8125rem">India</strong>
+                    <strong style="font-size: 0.8125rem">New Delhi</strong>
                     <address style="font-style: normal; font-size: 0.8125rem;">
                       405, Surya Kiran building<br/>
                       19, Kasturba Gandhi Marg<br/>
-                      New Delhi 110001<br/>
+                      New Delhi, India 110001<br/>
                       +91-11-46882200
                     </address>
                 </ul>
