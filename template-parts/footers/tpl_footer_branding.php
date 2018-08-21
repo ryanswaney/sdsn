@@ -41,17 +41,9 @@
                       475 Riverside Dr.<br/>
                       Suite 530<br/>
                       New York, NY 10115 USA<br />
-                       +1 (212) 870-3920
+                      +1 (212) 870-3920
                     </address>
                   </li>
-                  <li class="reversed-text">
-                    <strong style="font-size: 0.8125rem">New Delhi</strong>
-                    <address style="font-style: normal; font-size: 0.8125rem;">
-                      405, Surya Kiran building<br/>
-                      19, Kasturba Gandhi Marg<br/>
-                      New Delhi, India 110001<br/>
-                      +91-11-46882200
-                    </address>
                 </ul>
 
               </div>
