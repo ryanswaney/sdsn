@@ -34,7 +34,7 @@
       **/
       $args = array(
         'post_type' => 'sdsn-publications',
-        'posts_per_page' => 5,
+        'posts_per_page' => 8,
         'tax_query' => array(
           array (
             'taxonomy' => 'location',
