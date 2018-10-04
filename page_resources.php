@@ -120,8 +120,8 @@
 
       <?php if( $row_count > 1 ) : ?>
 
-        <a href="#" data-dropdown="publication-sup-download" class="button tiny radius dropdown">Download Supplemental Files</a>
-        <ul id="publication-sup-download" data-dropdown-content class="medium f-dropdown">
+        <a href="#" data-dropdown="publication-sup-download-<?php echo $post->ID ?>" class="button tiny radius dropdown">Download Supplemental Files</a>
+        <ul id="publication-sup-download-<?php echo $post->ID ?>" data-dropdown-content class="medium f-dropdown">
         <?php while ( have_rows('sdsn_publication_supplemental_flex_file') ) : the_row(); ?>
 
           <li><a href="<?php the_sub_field('sdsn_publication_supplemental_flex_file_attachment'); ?>" onclick="trackOutboundLink('<?php the_sub_field('sdsn_publication_supplemental_flex_file_attachment'); ?>'); return false;"><?php the_sub_field('sdsn_publication_supplemental_flex_file_title'); ?></a></li>
