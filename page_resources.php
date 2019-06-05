@@ -79,8 +79,8 @@
 
       <?php if( $row_count > 1 ) : ?>
 
-        <button href="#" data-dropdown="publication-download" class="button tiny radius dropdown">Download Publication</button>
-        <ul id="publication-download" data-dropdown-content class="medium f-dropdown">
+        <button href="#" data-dropdown="publication-download-<?php echo $post->ID ?>" class="button tiny radius dropdown">Download Publication</button>
+        <ul id="publication-download-<?php echo $post->ID ?>" data-dropdown-content class="medium f-dropdown">
         <?php while ( have_rows('sdsn_publication_flex_file') ) : the_row(); ?>
 
           <li><a href="<?php the_sub_field('sdsn_publication_flex_file_attachment'); ?>" onclick="trackOutboundLink('<?php the_sub_field('sdsn_publication_flex_file_attachment'); ?>'); return false;"><?php the_sub_field('sdsn_publication_flex_file_title'); ?></a></li>
