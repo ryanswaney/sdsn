@@ -32,7 +32,7 @@
 
     if ( !empty( $title ) && !empty( $url ) ) :
 
-      $output = '<a href="' . esc_attr( $url ) . '" title="Permalink to: ' . esc_attr( $title ) . '" class="button radius dark'. esc_attr( $class ). '">' . esc_attr( $title ) . '</a>';
+      $output = '<a href="' . esc_attr( $url ) . '" title="Permalink to: ' . esc_attr( $title ) . '" class="button radius dark '. esc_attr( $class ). '">' . esc_attr( $title ) . '</a>';
 
       return $output;
 
