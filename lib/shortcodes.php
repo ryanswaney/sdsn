@@ -3,18 +3,18 @@
   // Fixes empty paragraph tags in shortcodes
   // https://gist.github.com/maxxscho/2058547
   function shortcode_empty_paragraph_fix($content)
-  {  
+  {
       $array = array (
           '<p>[' => '[',
           ']</p>' => ']',
           ']<br />' => ']'
       );
-   
+
       $content = strtr($content, $array);
-   
+
       return $content;
   }
- 
+
   add_filter('the_content', 'shortcode_empty_paragraph_fix');
 
   function shortcode_button_func( $atts, $content = null ) {
@@ -32,7 +32,7 @@
 
     if ( !empty( $title ) && !empty( $url ) ) :
 
-      $output = '<a href="' . esc_attr( $url ) . '" title="Permalink to: ' . esc_attr( $title ) . '" class="button tiny radius dark">' . esc_attr( $title ) . '</a>';
+      $output = '<a href="' . esc_attr( $url ) . '" title="Permalink to: ' . esc_attr( $title ) . '" class="button radius dark'. esc_attr( $class ). '">' . esc_attr( $title ) . '</a>';
 
       return $output;
 

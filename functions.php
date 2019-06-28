@@ -54,6 +54,8 @@
 
 	add_action('wp_head', 'add_twitter_cards');
 
+	add_filter('the_excerpt', 'do_shortcode');
+
 	/* ========================================================================================================================
 
 	Custom Post Types - include custom post types and taxonimies here e.g.
